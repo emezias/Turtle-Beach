@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_screen" >
+
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+        android:id="@+id/hcTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4.0"
+        android:shadowDy="3.0"
+        android:shadowRadius="0.5"
+        android:text="@string/hcTitle"
+        android:textColor="@color/featTitleColor"
+        android:textSize="54sp" />
+
+    <ImageView
+        android:id="@+id/hcLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hcTitleText"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/img_linebreak_large" />
+
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+        android:id="@+id/hcSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hcLine"
+        android:gravity="center"
+        android:text="@string/specialSubTitle"
+        android:textColor="@color/blackBtnText"
+        android:textSize="26sp" />
+
+ 	<!-- proceed with caution, Linear Layout weighted widths caused auto height calculations to break
+ 			for that reason heights are hard-coded
+ 			setting the height of the headset rows to less than 200 threw off the widths, looked bad 
+ 			the values set here do not strictly match the spec documents -->
+    <LinearLayout
+        android:id="@+id/hcText1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/hcSubTitle"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/hc1"
+            android:textColor="@color/blackBtnText"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08" />
+
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/hc2"
+            android:textColor="@color/blackBtnText"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/hcRow2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/hcText1"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+
+        <ImageButton
+            android:id="@+id/hcS1BtnLeft"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="hcS1Click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_yellow_arrow_left" />
+
+        <ImageButton
+            android:id="@+id/headset1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:onClick="headsetClick"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/headset2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:onClick="headsetClick"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/hcS1BtnRight"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="hcS1Click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_yellow_arrow_right" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+
+        <ImageButton
+            android:id="@+id/hcS2BtnLeft"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="hcS2Click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_yellow_arrow_left" />
+
+        <ImageButton
+            android:id="@+id/headset3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:onClick="headsetClick"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/headset4"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:onClick="headsetClick"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/hcS2BtnRight"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="hcS2Click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_yellow_arrow_right" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/hcText2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/hcRow2"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/hc3"
+            android:textColor="@color/blackBtnText"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08" />
+
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/hc4"
+            android:textColor="@color/blackBtnText"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/hcRow4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/hcText2"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+
+        <ImageButton
+            android:id="@+id/hcS3BtnLeft"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="hcS3Click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_yellow_arrow_left" />
+
+        <ImageButton
+            android:id="@+id/headset5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:onClick="headsetClick"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/headset6"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:onClick="headsetClick"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/hcS3BtnRight"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="hcS3Click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_yellow_arrow_right" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+
+        <ImageButton
+            android:id="@+id/hcS4BtnLeft"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="hcS4Click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_yellow_arrow_left" />
+
+        <ImageButton
+            android:id="@+id/headset7"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:onClick="headsetClick"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/headset8"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:onClick="headsetClick"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/hcS4BtnRight"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="hcS4Click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_yellow_arrow_right" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/black_btn"
+        android:clickable="true"
+        android:onClick="gotoMainMenu"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/mmenu"
+        android:textColor="@color/blackBtnText"
+        android:textSize="20sp" />
+
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:text="@string/disclaimer"
+        android:textColor="@color/blackBtnText"
+        android:textSize="14sp" />
+</RelativeLayout>

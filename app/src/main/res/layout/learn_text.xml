@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.turtlebeach.gstop.headsets.ui.TrueTypeTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
+    android:lineSpacingExtra="4dp"
+    android:layout_gravity="left"
+    android:gravity="left"
+    android:singleLine="false"
+    android:text="headset specs"
+    android:textColor="@color/learnText"
+    android:textSize="23sp" />

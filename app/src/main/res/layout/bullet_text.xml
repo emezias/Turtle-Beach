@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.turtlebeach.gstop.headsets.ui.TrueTypeTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bulltext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginBottom="6dp"
+    android:drawableLeft="@drawable/bullet"
+    android:drawablePadding="6dp"
+    android:gravity="left"
+    android:singleLine="false"
+    android:text="headset specs"
+    android:textColor="@android:color/white"
+    android:textSize="16sp" />
+<!-- This layout is used for the bullet points in the slider panel -->

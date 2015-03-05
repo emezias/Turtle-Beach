@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="25dp"
+        android:layout_weight="0.5" >
+
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+            android:id="@+id/catTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="4.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="0.5"
+            android:text="@string/hcTitle"
+            android:textColor="@color/featTitleColor"
+            android:textSize="54sp" />
+
+        <ImageView
+            android:id="@+id/catLine"
+            android:layout_width="800dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/catTitleText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/img_linebreak_large" />
+
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+            android:id="@+id/catDesignText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textColor="@color/featTitleColor"
+            android:textSize="26sp" />
+    </RelativeLayout>
+    <!-- This is the container for the slide panel fragments -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:background="@drawable/bg_bar"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" >
+
+        <ImageButton
+            android:id="@+id/catBtnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:onClick="arrowButton"
+            android:background="@drawable/btn_yellow_arrow_right" />
+
+        <ImageButton
+            android:id="@+id/catBtnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            android:onClick="arrowButton"
+            android:background="@drawable/btn_yellow_arrow_left" />
+
+        <RelativeLayout android:id="@+id/newcatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/catBtnRight"
+            android:layout_toRightOf="@id/catBtnLeft" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5" >
+
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeButton
+            android:id="@+id/catMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/black_btn"
+            android:clickable="true"
+            android:onClick="mMenu"
+            android:paddingTop="7dp"
+        		android:paddingBottom="7dp"
+        		android:paddingLeft="20dp"
+        		android:paddingRight="20dp"
+            android:text="@string/mmenu"
+            android:textColor="@color/blackBtnText"
+            android:textSize="20sp" />
+
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeButton
+            android:id="@+id/catBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/black_btn"
+            android:clickable="true"
+            android:onClick="mMenu"
+            android:padding="9dp"
+            android:text="@string/back"
+            android:textColor="@color/blackBtnText"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:gravity="center" >
+
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+        android:id="@+id/adminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/adminTitle"
+        android:textColor="@color/featTitleColor"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4.0"
+        android:shadowDy="3.0"
+        android:shadowRadius="0.5"
+        android:textSize="36sp" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/adminTitle"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/img_linebreak_large" />
+    
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+        android:id="@+id/adminNumberTitle"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/adminTitle"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="left"
+        android:text="@string/admin_number"
+        android:textColor="@color/admin_label"
+        android:textSize="14sp" />
+    
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+        android:id="@+id/adminZipTitle"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/adminTitle"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:gravity="left"
+        android:text="@string/admin_zip"
+        android:textColor="@color/admin_label"
+        android:textSize="14sp" />
+        
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeEditText
+        android:id="@+id/adminNumber"
+        android:layout_width="326dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/adminNumberTitle"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="30dp"
+        android:padding="12dp"
+        android:hint="Number"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:background="@drawable/img_admin_textfield"
+        android:gravity="center_vertical|left"
+        android:textSize="25sp" />
+		
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeEditText
+        android:id="@+id/adminZip"
+        android:layout_width="326dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/adminZipTitle"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="14dp"
+        android:padding="12dp"
+        android:hint="Zip Code"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:background="@drawable/img_admin_textfield"
+        android:gravity="center_vertical|left"
+        android:textSize="25sp" />
+    
+	<LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+        
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/adminManLabel"
+            android:textColor="@color/admin_label"
+            android:textSize="14sp" />
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+            android:id="@+id/adminManTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:text="Manufacturer"
+            android:textColor="@color/blackBtnText"
+            android:textSize="24sp" />
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="@string/adminVerLabel"
+            android:textColor="@color/admin_label"
+            android:textSize="14sp" />
+        <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+            android:id="@+id/adminVerTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:text="Version"
+            android:textColor="@color/blackBtnText"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeButton
+        android:id="@+id/adminSave" 
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/black_btn"
+        android:clickable="true"
+        android:onClick="adminButton"
+        android:text="@string/save"
+        android:textColor="@color/blackBtnText"
+        android:textSize="14sp" />
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeButton
+        android:id="@+id/adminLog"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/adminSave"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="33dp"
+        android:background="@drawable/black_btn"
+        android:clickable="true"
+        android:onClick="adminButton"
+        android:text="@string/logs"
+        android:textColor="@color/blackBtnText"
+        android:textSize="14sp" />
+
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeButton
+        android:id="@+id/adminExit" 
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/black_btn"
+        android:clickable="true"
+        android:onClick="adminButton"
+        android:text="@string/adminExit"
+        android:textColor="@color/blackBtnText"
+        android:textSize="14sp" />
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeButton
+        android:id="@+id/adminCancel"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/adminExit"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/black_btn"
+        android:clickable="true"
+        android:onClick="adminButton"
+        android:text="@string/cancel"
+        android:textColor="@color/blackBtnText"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/img_turtlebeach_logo" />
+
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeTextView
+        android:id="@+id/splashTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashLogo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="36dp"
+        android:text="@string/splashTitle"
+        android:textColor="@color/menuButtons"
+        android:clickable="true"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/splashLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashTitleText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/img_linebreak_large" />
+
+    <com.turtlebeach.gstop.headsets.ui.TrueTypeButton
+        android:id="@+id/splashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="500dp"
+        android:layout_below="@id/splashLine"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/brown_btn"
+        android:text="@string/splashButton"
+        android:textColor="@color/menuButtons"
+        android:clickable="true"
+        android:onClick="splashButton"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/img_headset_infographic" />
+
+</RelativeLayout>
