@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TBHeadsetLib/TBHeadsetLib.iml" filepath="$PROJECT_DIR$/TBHeadsetLib/TBHeadsetLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TurtleBeachGS.iml" filepath="$PROJECT_DIR$/TurtleBeachGS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TurtleBeachGStop/TurtleBeachGStop.iml" filepath="$PROJECT_DIR$/TurtleBeachGStop/TurtleBeachGStop.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="video_playback_progress">#ffc1a06f</color>
+    <color name="video_window_lightbox">#110f0f0f</color>
+    <color name="video_title">#FFDCDCDC</color>
+    <color name="video_bar_background">#B2171717</color>
+    <color name="dark_txt">#FF2B2B2A</color>
+    <color name="menuText">#563A22</color>
+    <color name="menuButtons">#D3C395</color>
+    <color name="featTitleColor">#CEB55C</color>
+    <color name="blackBtnText">#FFFDC5</color>
+    <color name="silverBtnText">#272727</color>
+    <color name="black_overlay">#66000000</color>
+		<color name="admin_label">#D5BF8A</color>
+		<color name="learnText">#1A1A1A</color>
+		<color name="alertTitle">#FFFCC8</color>
+		<color name="alertLabel">#999778</color>
+		<color name="pwdBackground">#191817</color>
+		<color name="pwdPressed">#30302f</color>
+		<color name="black_band">#FF1C1A16</color>
+		<color name="hs_question">#FFF3E7A2</color>
+		<color name="hs_result">#FF1B1A17</color>
+</resources>

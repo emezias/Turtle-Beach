@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sound_experiences" >
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+        android:id="@+id/sndTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingRight="550dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4.0"
+        android:shadowDy="3.0"
+        android:shadowRadius="0.5"
+        android:text="@string/sndTitle"
+        android:textColor="@color/featTitleColor"
+        android:textSize="54sp" />
+
+    <ImageView
+        android:id="@+id/sndLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sndTitleText"
+        android:layout_marginRight="550dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/img_linebreak_large" />
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+        android:id="@+id/sndSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sndTitleText"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:paddingRight="550dp"
+        android:text="@string/sndSubTitle"
+        android:textColor="@color/blackBtnText"
+        android:textSize="26sp" />
+
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeButton
+        android:id="@+id/sndPlayRPG"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sndTitleText"
+        android:layout_marginBottom="95dp"
+        android:layout_marginLeft="72dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/silver_btn"
+        android:clickable="true"
+        android:onClick="playVideo"
+        android:text="@string/sndRPG"
+        android:textColor="@color/silverBtnText"
+        android:textSize="20sp" />
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeButton
+        android:id="@+id/sndPlaySport"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sndTitleText"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="123dp"
+        android:layout_marginRight="550dp"
+        android:background="@drawable/silver_btn"
+        android:clickable="true"
+        android:onClick="playVideo"
+        android:text="@string/sndSports"
+        android:textColor="@color/silverBtnText"
+        android:textSize="20sp" />
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeButton
+        android:id="@+id/sndPlayAction"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sndSubTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/silver_btn"
+        android:clickable="true"
+        android:onClick="playVideo"
+        android:text="@string/sndAction"
+        android:textColor="@color/silverBtnText"
+        android:textSize="20sp" />
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeButton
+        android:id="@+id/sndPlayRacing"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sndSubTitle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="375dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/silver_btn"
+        android:clickable="true"
+        android:onClick="playVideo"
+        android:text="@string/sndRacing"
+        android:textColor="@color/silverBtnText"
+        android:textSize="20sp" />
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeButton
+        android:id="@+id/btnPlayMenu"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/black_btn"
+        android:clickable="true"
+        android:onClick="mMenu"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/mmenu"
+        android:textColor="@color/blackBtnText"
+        android:textSize="20sp" />
+
+</RelativeLayout>

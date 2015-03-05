@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.clickbrand.turtlebeach.ui.TrueTypeButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/brown_btn"
+    android:clickable="true"
+    android:onClick="answerQuestion"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:text="@string/mmenu"
+    android:textColor="@color/blackBtnText"
+    android:textSize="20sp" />

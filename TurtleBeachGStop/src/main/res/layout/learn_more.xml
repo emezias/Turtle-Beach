@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    android:clickable="true" >
+
+    <LinearLayout android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="96dp"
+        android:layout_centerInParent="true" 
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+        <ScrollView android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1.33">
+            <LinearLayout android:id="@+id/learnBullets"
+			    android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:orientation="vertical" />
+        </ScrollView>
+		
+		<ImageView 
+		    android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="12dp"
+        	android:layout_marginRight="4dp"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/img_details_popup_vertical_linebreak" />
+		<RelativeLayout 
+		    android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_gravity="center" >
+
+			<ImageView
+			    android:id="@+id/learnImage"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_marginTop="-16dp"
+			    android:scaleType="fitXY" />
+
+			<com.clickbrand.turtlebeach.ui.TrueTypeTextView
+		        android:id="@+id/disclaimer"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/learnImage"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="8dp"
+		        android:textSize="14sp"
+		        android:textColor="@color/learnText"
+		        android:singleLine="false"
+		        android:text="@string/detailsDisclaimer"
+		        android:drawablePadding="5dp"
+		        android:drawableLeft="@drawable/img_detail_disclaimer_wii" />
+			</RelativeLayout>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/learnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="108dp"
+        android:layout_marginTop="106dp"
+        android:background="@null"
+        android:src="@drawable/btn_close_detail_popup" />
+
+</RelativeLayout>

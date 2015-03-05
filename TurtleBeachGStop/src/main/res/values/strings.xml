@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Turtle Beach</string>
+    <string name="LYTICS_DEV">011e49bac227432f359050d-14479fd6-3f46-11e4-a426-009c5fda0a25</string>
+    <string name="LYTICS_PROD">8766ffc3ca057483467e0e7-442074d4-3f46-11e4-a426-009c5fda0a25</string>
+    <string name="admin_number">STORE LOCATION NUMBER*</string>
+    <string name="admin_zip">STORE ZIP CODE*</string>
+    <string name="save">SAVE</string>
+    <string name="logs">GET LOGS</string>
+    <string name="noName">Please enter zip code</string>
+    <string name="noNumber">Please enter the store location number</string>
+    <string name="noText">All fields required</string>
+    <string name="dateTimeFormat">MM/dd/yyyy hh:mm aa</string>
+    <string name="pcTitle">PC HEADSET CATALOG</string>
+    <string name="pcSubTitle">SELECT A HEADSET FOR MORE INFORMATION</string>
+</resources>

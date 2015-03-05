@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These arrays hold all the headset data pieces, in alphabetical order -->
+<resources>
+    <string-array name="headsetNames">
+        <item>NLA</item>
+        <item>PS3 P11 Stereo</item>
+        <item>P12</item>
+        <item>P4C</item>
+        <item>PS3 PX3 Stereo</item>
+        <item>PX4</item>
+        <item>PS3 PX22 Stereo</item>
+        <item>PX22 WHT</item>
+        <item>PS3 PX51 Dolby</item>
+        <item>Call of Duty Sierra</item>
+        <item>Call of Duty Xray</item>
+        <item>Titanfall Atlas</item>
+        <item>Xbox X12 Stereo</item>
+        <item>X12 Arctic</item>
+        <item>Xbox X32 Stereo</item>
+        <item>Xbox X42 Stereo</item>
+        <item>XLA</item>
+        <item>Xbox XP510 Dolby</item>
+        <item>XPSeven</item>
+        <item>XoFour</item>
+        <item>XoSeven</item>        
+    </string-array>
+    
+	<string-array name="detailsOnSDCard">
+	    <item>img_nla_details.png</item>
+	    <item>TB_BBKiosk_p11Card_AV_001.png</item>
+	    <item>img_px4_details.png</item>
+	    <item>img_p4c_details.png</item>
+	    <item>img_px22_details.png</item>
+	    <item>TB_BBKiosk_px3Card_AV_001.png</item>
+	    <item>img_px4_details.png</item>
+	    <item>img_px4_details.png</item>
+	    <item>img_px51_details.png</item>
+	    <item>img_px51_details.png</item>
+	    <item>TB_BBKiosk_SierraCard_AV_001.png</item>
+	    <item>img_titanfallatlas_details.png</item>
+	    <item>TB_BBKiosk_x12Card_AV_001.png</item>
+	    <item>TB_BBKiosk_x12Card_AV_001.png</item>
+	    <item>TB_BBKiosk_x32Card_AV_001.png</item>
+	    <item>TB_BBKiosk_x42Card_AV_001.png</item>
+	    <item>img_xofour_details.png</item>
+	    <item>img_xoseven_details.png</item>
+	    <item>img_xp510_details.png</item>
+	    <item>img_xp510_details.png</item>
+	    <item>TB_BBKiosk_XRayCard_AV_001.png</item>
+	    
+	</string-array>
+</resources>

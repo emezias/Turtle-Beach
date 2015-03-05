@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_gravity="left"
+    android:background="@null" >
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+        android:id="@+id/container_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="50dp"
+        android:textColor="@color/blackBtnText"
+        android:textSize="30sp"
+        android:gravity="center" />
+    <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+        android:id="@+id/container_title_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/container_title"
+        android:layout_alignBottom="@id/container_title"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/blackBtnText"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_title"
+        android:layout_gravity="center"
+        android:orientation="horizontal" />
+    
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="25dp"
+        android:layout_weight=".75" >
+
+        <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+            android:id="@+id/slideTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="4.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="0.5"
+            android:text="@string/specialTitle"
+            android:textColor="@color/featTitleColor"
+            android:textSize="54sp" />
+
+        <ImageView
+            android:id="@+id/slideLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slideTitleText"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/img_linebreak_large" />
+
+        <ImageView
+            android:id="@+id/slideSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slideLine"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@drawable/img_wii_u_logo" />
+    </RelativeLayout>
+    <!-- This is the container for the slide panel fragments -->
+    <RelativeLayout
+        android:id="@+id/panelFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.8" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".75" >
+
+        <com.clickbrand.turtlebeach.ui.TrueTypeButton
+            android:id="@+id/panelMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/black_btn"
+            android:clickable="true"
+            android:onClick="mMenu"
+            android:paddingTop="7dp"
+        		android:paddingBottom="7dp"
+        		android:paddingLeft="20dp"
+        		android:paddingRight="20dp"
+            android:text="@string/mmenu"
+            android:textColor="@color/blackBtnText"
+            android:textSize="20sp" />
+
+        <com.clickbrand.turtlebeach.ui.TrueTypeButton
+            android:id="@+id/panelBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/black_btn"
+            android:clickable="true"
+            android:onClick="mMenu"
+            android:padding="9dp"
+            android:text="@string/back"
+            android:textColor="@color/blackBtnText"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

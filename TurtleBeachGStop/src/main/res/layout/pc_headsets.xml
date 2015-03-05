@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_screen" >
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+        android:id="@+id/pcTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/pcTitle"
+        android:textColor="@color/featTitleColor"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4.0"
+        android:shadowDy="3.0"
+        android:shadowRadius="0.5"
+        android:textSize="54sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pcTitle"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/img_linebreak_large" />
+    <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+        android:id="@+id/pcSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pcTitle"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/pcSubTitle"
+        android:textColor="@color/admin_label"
+        android:textSize="26sp" />
+        <LinearLayout
+            android:id="@+id/pcHeadsets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/pcSubTitle"
+            android:layout_marginTop="48dp" >
+            <ImageButton
+                android:id="@+id/pcHeadset1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:onClick="gotoSlider" />
+            <ImageButton
+                android:id="@+id/pcHeadset2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:onClick="gotoSlider" />
+            <ImageButton
+                android:id="@+id/pcHeadset3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:onClick="gotoSlider" />
+        </LinearLayout>
+    <com.clickbrand.turtlebeach.ui.TrueTypeButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/black_btn"
+        android:clickable="true"
+        android:onClick="gotoMainMenu"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/mmenu"
+        android:textColor="@color/blackBtnText"
+        android:textSize="20sp" />
+    
+    <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:text="@string/disclaimer"
+        android:textColor="@color/blackBtnText"
+        android:textSize="14sp" />
+</RelativeLayout>

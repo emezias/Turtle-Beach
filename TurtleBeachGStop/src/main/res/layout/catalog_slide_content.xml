@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/catHeadset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="16dp"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" >
+
+        <ImageView
+            android:id="@+id/catLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitStart" />
+
+        <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+            android:id="@+id/catDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/catLogo"
+            android:layout_below="@id/catLogo"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingExtra="-10.0dp"
+            android:gravity="left"
+            android:singleLine="false"
+            android:textColor="@android:color/white"
+            android:textSize="39sp" />
+
+        <com.clickbrand.turtlebeach.ui.TrueTypeButton
+            android:id="@+id/catLearn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/catLogo"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/silver_btn"
+            android:clickable="true"
+            android:fontFamily="bold"
+            android:gravity="center"
+            android:onClick="mMenu"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:text="@string/learn"
+            android:textColor="@color/silverBtnText"
+            android:textSize="14sp" />
+        <LinearLayout
+            android:id="@+id/catBullets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/catLogo"
+            android:layout_above="@id/catLearn"
+            android:layout_below="@id/catDescription"
+            android:layout_marginBottom="6dp"
+            android:gravity="left"
+            android:orientation="vertical" />
+    </RelativeLayout>
+</LinearLayout>

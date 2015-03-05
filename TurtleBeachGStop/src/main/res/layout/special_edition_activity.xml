@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_special_edition" >
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+        android:id="@+id/specialTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4.0"
+        android:shadowDy="3.0"
+        android:shadowRadius="0.5"
+        android:text="@string/specialTitle"
+        android:textColor="@color/featTitleColor"
+        android:textSize="54sp" />
+
+    <ImageView
+        android:id="@+id/specialLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/specialTitleText"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/img_linebreak_large" />
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+        android:id="@+id/specialSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/specialLine"
+        android:gravity="center"
+        android:text="@string/specialSubTitle"
+        android:textColor="@color/blackBtnText"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:id="@+id/special_headset_top_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/specialSubTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp" />
+    
+    <LinearLayout
+        android:id="@+id/special_headset_bottom_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/special_headset_top_row"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp" />
+
+    <com.clickbrand.turtlebeach.ui.TrueTypeButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/black_btn"
+        android:clickable="true"
+        android:onClick="mMenu"
+        android:text="@string/mmenu"
+        android:textColor="@color/blackBtnText"
+        android:textSize="20sp" />
+    
+    <com.clickbrand.turtlebeach.ui.TrueTypeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:text="@string/disclaimer"
+        android:textColor="@color/blackBtnText"
+        android:textSize="14sp" />
+
+</RelativeLayout>

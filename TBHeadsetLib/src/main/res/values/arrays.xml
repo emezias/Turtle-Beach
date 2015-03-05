@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Start off with the featured, and the videos -->
+    <!-- Changed for BBY -->
+    <!-- featured headset logos are in the project res/drawable -->
+    <!-- ampersand are xml special characters, use \u0026 -->
+    <string-array name="featuredButton">
+        <item>btn_featured_stealth500p.png</item>
+        <item>btn_featured_stealth500x.png</item>
+        <item>btn_featured_xoseven.png</item>
+        <item>btn_featured_elite800.png</item>
+        </string-array>
+    <string-array name="featuredButtonPress">
+        <item>btn_featured_stealth500p_p.png</item>
+        <item>btn_featured_stealth500x_p.png</item>
+        <item>btn_featured_xoseven_p.png</item>
+        <item>btn_featured_elite800_p.png</item>
+        </string-array>
+    <string-array name="featuredVideo">
+        <item>stealth_500p.mp4</item>
+        <item>stealth_500x.mp4</item>
+        <item>xo7.mp4</item>
+        <item>elite800.mp4</item>
+    </string-array>
+    <string-array name="featuredTitles">
+        <item>FEATURED HEADSETS: STEALTH 500P PRODUCT VIDEO</item>
+        <item>FEATURED HEADSETS: STEALTH 500X PRODUCT VIDEO</item>
+        <item>FEATURED HEADSETS: XOSEVEN PRODUCT VIDEO</item>
+        <item>FEATURED HEADSETS: ELITE 800 PRODUCT VIDEO</item>
+        </string-array>
+    <string-array name="soundTitles">
+        <item>SOUND EXPERIENCES: ACTION EXPERIENCE</item>
+        <item>SOUND EXPERIENCES: RACING EXPERIENCE</item>
+        <item>SOUND EXPERIENCES: RPG EXPERIENCE</item>
+        <item>SOUND EXPERIENCES: SPORTS EXPERIENCE</item>
+    </string-array>
+    <string-array name="soundVideos">
+        <item>ACTION.mp4</item>
+        <item>RACING.mp4</item>
+        <item>RPG.mp4</item>
+        <item>SPORTS.mp4</item>
+    </string-array>
+    <string-array name="trailerTitles">
+        <item>Call of Duty Advanced Warfare</item>
+        <item>Call of Duty: Advanced Warfare Headsets</item>
+        <item>Heroes of the Storm</item>
+        <item>Evolve</item>
+        <item>Disney Infinity: Marvel Super Heroes 2</item>
+        <item>Need for Speed Rivals Complete Ed.</item>
+		</string-array>
+    <string-array name="trailerVideos">
+        <item>cod.mp4</item>
+        <item>cod_headset.mp4</item>
+        <item>heroes.mp4</item>
+        <item>evolve.mp4</item>
+        <item>disney.mp4</item>
+        <item>speed.mp4</item>
+    </string-array>
+
+    <!-- These arrays hold all the headset data pieces in the library, in alphabetical order -->
+
+    <string-array name="headsetNames">
+        <item>NLA</item>
+        <item>PS3 P11 Stereo</item>
+        <item>P12</item>
+        <item>P4C</item>
+        <item>PLA</item>
+        <item>PS3 PX3 Stereo</item>
+        <item>PS4 PX4</item>
+        <item>PS3 PX22 Stereo</item>
+        <item>PX22 WHT</item>
+        <item>PS3 PX51 Dolby</item>
+        <item>Call of Duty Xray</item>
+        <item>Call of Duty Sierra</item>
+        <item>Stealth 400</item>
+        <item>Stealth 500P</item>
+        <item>Stealth 500X</item>
+        <item>Titanfall Atlas</item>
+        <item>Xbox X12 Stereo</item>
+        <item>X12 Arctic</item>
+        <item>Xbox X32 Stereo</item>
+        <item>Xbox X42 Stereo</item>
+        <item>XL1 Licensed</item>
+        <item>XLA</item>
+        <item>Xbox XP510 Dolby</item>
+        <item>XPSeven</item>
+        <item>XoFour</item>
+        <item>XoOne</item>
+        <item>XoSeven</item>
+        <item>Z11</item>
+        <item>Z22</item>
+        <item>Z300</item>
+        <item>Z60</item>
+        <item>Recon 320</item>
+        <item>Elite 800</item>
+        <item>Prestige</item>
+        <item>Heroes of the Storm</item>
+        <item>Disney Super Heroes</item>
+        <item>Sentinel Task Force PS4</item>
+        <item>Sentinel Task Force X1</item>
+        <item>Atlas</item>
+        <item>Star Wars</item>
+    </string-array>
+    <!--
+    These shadow and spectre are questionable assets, may not be correct
+                    <item>btn_catalog_xbone_xoone.png</item>
+                    <item>btn_catalog_xb360_xl1.png</item>
+    not in the ID array
+    -->
+    <string-array name="thumbs">
+        <item>btn_specialedition_catalog_nla.png</item>
+        <item>btn_catalog_ps3_p11.png</item>
+        <item>btn_catalog_ps4_p12.png</item>
+        <item>btn_catalog_ps4_p4c.png</item>
+        <item>btn_catalog_ps3_pla.png</item>
+        <item>btn_catalog_px3.png</item>
+        <item>btn_catalog_ps4_px4.png</item>
+        <item>btn_catalog_ps3_px22.png</item>
+        <item>btn_catalog_px22_wht.png</item>
+        <item>btn_catalog_px51.png</item>
+        <item>btn_shadow.png</item>
+        <item>btn_ghosts_tango.png</item>
+        <item>btn_catalog_ps4_stealth400.png</item>
+        <item>btn_catalog_ps4_stealth500p.png</item>
+        <item>btn_catalog_xboxone_stealth500x.png</item>
+        <item>btn_specialedition_titanfall_atlas.png</item>
+        <item>btn_catalog_xb360_x12.png</item>
+        <item>btn_catalog_x12_arctic.png</item>
+        <item>btn_catalog_xb360_x32.png</item>
+        <item>img_x42.png</item>
+        <item>btn_catalog_xb360_xl1.png</item>
+        <item>btn_catalog_xla</item>
+        <item>btn_catalog_xp510.png</item>
+        <item>btn_catalog_xpseven.png</item>
+        <item>btn_catalog_xbone_xofour.png</item>
+        <item>btn_catalog_xbone_xoone.png</item>
+        <item>btn_catalog_xbone_xoseven.png</item>
+        <item>btn_catalog_pc_z11.png</item>
+        <item>btn_catalog_z22.png</item>
+        <item>btn_catalog_z300.png</item>
+        <item>btn_catalog_pc_z60.png</item>
+        <item>btn_catalog_pc_recon320.png</item>
+        <item>btn_catalog_ps4_elite800.png</item>
+        <item>btn_specialedition_catalog_cod_prestige.png</item>
+        <item>btn_specialedition_catalog_hots_heroesofthestorm.png</item>
+        <item>btn_specialedition_catalog_marvel_disneysuperheroes.png</item>
+        <item>btn_specialedition_catalog_sentineltaskforceps4.png</item>
+        <item>btn_specialedition_catalog_sentineltaskforcex1.png</item>
+        <item>btn_specialedition_catalog_titanfall_atlas.png</item>
+        <item>btn_specialedition_catalog_starwars_starwars.png</item>
+    </string-array>
+    <string-array name="thumbsPress">
+        <item>btn_specialedition_catalog_nla_p.png</item>
+        <item>btn_catalog_ps3_p11_p.png</item>
+        <item>btn_catalog_ps4_p12_p.png</item>
+        <item>btn_catalog_ps4_p4c_p.png</item>
+        <item>btn_catalog_ps3_pla_p.png</item>
+        <item>btn_catalog_px3_p.png</item>
+        <item>btn_catalog_ps4_px4_p.png</item>
+        <item>btn_catalog_ps3_px22_p.png</item>
+        <item>btn_catalog_px22_wht_p.png</item>
+        <item>btn_catalog_px51_p.png</item>
+        <item>btn_shadow_p.png</item>
+        <item>btn_ghosts_tango_p.png</item>
+        <item>btn_catalog_ps4_stealth400_p.png</item>
+        <item>btn_catalog_ps4_stealth500p_p.png</item>
+        <item>btn_catalog_xboxone_stealth500x_p.png</item>
+        <item>btn_specialedition_titanfall_atlas_p.png</item>
+        <item>btn_catalog_xb360_x12_p.png</item>
+        <item>btn_catalog_x12_arctic_p.png</item>
+        <item>btn_catalog_xb360_x32_p.png</item>
+        <item>img_x42_p.png</item>
+        <item>btn_catalog_xb360_xl1_p.png</item>
+        <item>btn_catalog_xla_p</item>
+        <item>btn_catalog_xp510_p.png</item>
+        <item>btn_catalog_xpseven_p.png</item>
+        <item>btn_catalog_xbone_xofour_p.png</item>
+        <item>btn_catalog_xbone_xoone_p.png</item>
+        <item>btn_catalog_xbone_xoseven_p.png</item>
+        <item>btn_catalog_pc_z11_p.png</item>
+        <item>btn_catalog_z22_p.png</item>
+        <item>btn_catalog_z300_p.png</item>
+        <item>btn_catalog_pc_z60_p.png</item>
+        <item>btn_catalog_pc_recon320_p.png</item>
+        <item>btn_catalog_ps4_elite800_p.png</item>
+        <item>btn_specialedition_catalog_cod_prestige_p.png</item>
+        <item>btn_specialedition_catalog_hots_heroesofthestorm_p.png</item>
+        <item>btn_specialedition_catalog_marvel_disneysuperheroes_p.png</item>
+        <item>btn_specialedition_catalog_sentineltaskforceps4_p.png</item>
+        <item>btn_specialedition_catalog_sentineltaskforcex1_p.png</item>
+        <item>btn_specialedition_catalog_titanfall_atlas_p.png</item>
+        <item>btn_specialedition_catalog_starwars_starwars_p.png</item>
+    </string-array>
+
+    <string-array name="detailsOnSDCard">
+        <item>img_details_packaging_special_nla.png</item>
+        <item>img_details_packaging_ps3_p11.png</item>
+        <item>img_details_packaging_ps4_p12.png</item>
+        <item>img_details_packaging_ps4_p4c.png</item>
+        <item>img_details_packaging_ps3_pla.png</item>
+        <item>img_px3_details.png</item>
+        <item>img_details_packaging_ps4_px4.png</item>
+        <item>img_details_packaging_ps3_px22.png</item>
+        <item>img_details_packaging_ps3_px22.png</item>
+        <item>img_px51_details.png</item>
+        <item>img_xray_details.png</item>
+        <item>img_sierra_details.png</item>
+        <item>img_details_packaging_ps4_stealth400.png</item>
+        <item>img_details_packaging_ps4_stealth500p.png</item>
+        <item>img_details_packaging_xboxone_stealth500x.png</item>
+        <item>img_titanfallatlas_details.png</item>
+        <item>img_details_packaging_xb360_x12.png</item>
+        <item>img_details_packaging_xb360_x12.png</item>
+        <item>img_details_packaging_xb360_x32.png</item>
+        <item>TB_BBKiosk_x42Card_AV_001.png</item>
+        <item>img_details_packaging_xb360_xl1.png</item>
+        <item>img_xla_details.png</item>
+        <item>img_xp510_details.png</item>
+        <item>TB-XP7-PKG.png</item>
+        <item>img_details_packaging_xbone_xofour.png</item>
+        <item>img_details_packaging_xbone_xoone.png</item>
+        <item>img_details_packaging_xbone_xoseven.png</item>
+        <item>img_details_packaging_pc_z11.png</item>
+        <item>img_z22_details.png</item>
+        <item>img_z300_details.png</item>
+        <item>img_details_packaging_pc2_z60.png</item>
+        <item>img_details_packaging_pc3_recon320.png</item>
+        <item>img_details_packaging_ps4_elite800.png</item>
+        <item>img_details_packaging_cod_prestige.png</item>
+        <item>img_details_packaging_hots_heroesofthestorm.png</item>
+        <item>img_details_packaging_marvel_disneysuperheroes.png</item>
+        <item>img_details_packaging_cod_sentineltaskforceps4.png</item>
+        <item>img_details_packaging_cod_sentineltaskforcex1.png</item>
+        <item>img_details_packaging_special_titanfall_atlas.png</item>
+        <item>img_details_packaging_starwars_starwars.png</item>
+    </string-array>
+
+    <string-array name="sliderImages">
+        <item>img_slide_headsetimg_special_nla.png</item>
+        <item>img_slide_headsetimg_ps3_p11.png</item>
+        <item>img_slide_headsetimg_ps4_p12.png</item>
+        <item>img_slide_headsetimg_ps4_p4c.png</item>
+        <item>img_slide_headsetimg_ps3_pla.png</item>
+        <item>tbd_px3</item>
+        <item>img_slide_headsetimg_ps4_px4.png</item>
+        <item>img_slide_headsetimg_ps3_px22.png</item>
+        <item>img_slide_headsetimg_ps3_px22.png</item>
+        <item>img_px51_slidepanel.png</item>
+        <item>TB_BBKiosk_XraySlidder_AV_001.png</item>
+        <item>TB_BBKiosk_SierraSlidder_AV_001_01.png</item>
+        <item>img_slide_headsetimg_ps4_stealth400.png</item>
+        <item>img_slide_headsetimg_ps4_stealth500p.png</item>
+        <item>img_slide_headsetimg_xboxone_stealth500x.png</item>
+        <item>img_slider_titanfall_atlas.png</item>
+        <item>img_slide_headsetimg_xb360_x12.png</item>
+        <item>img_slide_headsetimg_xb360_x12.png</item>
+        <item>img_slide_headsetimg_xb360_x32.png</item>
+        <item>TB_BBKiosk_x42Slidder_AV_001.png</item>
+        <item>img_slide_headsetimg_xb360_xl1.png</item>
+        <item>TB_BBKiosk_xLaSlidder_AV_001.png</item>
+        <item>img_xp510_slide_panel.png</item>
+        <item>img_xp7_slide_panel.png</item>
+        <item>img_slide_headsetimg_xbone_xofour.png</item>
+        <item>img_slide_headsetimg_xbone_xoone.png</item>
+        <item>img_slide_headsetimg_xbone_xoseven.png</item>
+        <item>img_slide_headsetimg_pc1_z11.png</item>
+        <item>img_z22_slide_panel.png</item>
+        <item>img_z300_slide_panel.png</item>
+        <item>img_slide_headsetimg_pc2_z60.png</item>
+        <item>img_slide_headsetimg_pc3_recon320.png</item>
+        <item>img_slide_headsetimg_ps4_elite800.png</item>
+        <item>img_slide_headsetimg_cod1_prestige.png</item>
+        <item>img_slide_headsetimg_hots_heroesofthestorm.png</item>
+        <item>img_slide_headsetimg_marvel_disneysuperheroes.png</item>
+        <item>img_slide_headsetimg_cod3_sentineltaskforceps4.png</item>
+        <item>img_slide_headsetimg_cod2_sentineltaskforcex1.png</item>
+        <item>img_slide_headsetimg_special_titanfall_atlas.png</item>
+        <item>img_slide_headsetimg_starwars_starwars.png</item>
+    </string-array>
+    <string-array name="sliderLogos">
+        <item>img_slide_headsetlogo_special_nla.png</item>
+        <item>img_slide_headsetlogo_ps3_p11.png</item>
+        <item>img_slide_headsetlogo_ps4_p12.png</item>
+        <item>img_slide_headsetlogo_ps4_p4c.png</item>
+        <item>img_slide_headsetlogo_ps3_pla.png</item>
+        <item>tbd_px3</item>
+        <item>img_slide_headsetlogo_ps4_px4.png</item>
+        <item>img_slide_headsetlogo_ps3_px22.png</item>
+        <item>img_slide_headsetlogo_ps3_px22.png</item>
+        <item>img_px51_slidepanel.png</item>
+        <item>TB_BBKiosk_XraySlidder_AV_001.png</item>
+        <item>TB_BBKiosk_SierraSlidder_AV_001_01.png</item>
+        <item>img_slide_headsetlogo_ps4_stealth400.png</item>
+        <item>img_slide_headsetlogo_ps4_stealth500p.png</item>
+        <item>img_slide_headsetlogo_xboxone_stealth500x.png</item>
+        <item>img_slider_titanfall_atlas.png</item>
+        <item>img_slide_headsetlogo_xb360_x12.png</item>
+        <item>img_slide_headsetlogo_xb360_x12.png</item>
+        <item>img_slide_headsetlogo_xb360_x32.png</item>
+        <item>TB_BBKiosk_x42Slidder_AV_001.png</item>
+        <item>img_slide_headsetlogo_xb360_xl1.png</item>
+        <item>TB_BBKiosk_xLaSlidder_AV_001.png</item>
+        <item>img_xp510_slide_panel.png</item>
+        <item>img_xp7_slide_panel.png</item>
+        <item>img_slide_headsetlogo_xbone_xofour.png</item>
+        <item>img_slide_headsetlogo_xbone_xoone.png</item>
+        <item>img_slide_headsetlogo_xbone_xoseven.png</item>
+        <item>img_slide_headsetlogo_pc_z11.png</item>
+        <item>img_z22_slide_panel.png</item>
+        <item>img_z300_slide_panel.png</item>
+        <item>img_slide_headsetlogo_pc2_z60.png</item>
+        <item>img_slide_headsetlogo_pc3_recon320.png</item>
+        <item>img_slide_headsetlogo_ps4_elite800.png</item>
+				<item>img_slide_headsetlogo_cod_prestige.png</item>
+        <item>img_slide_headsetlogo_hots_heroesof_thestorm.png</item>
+        <item>img_slide_headsetlogo_marvel_disneysuperheroes.png</item>
+        <item>img_slide_headsetlogo_cod_sentineltaskforceps4.png</item>
+        <item>img_slide_headsetlogo_cod_sentineltaskforcex1.png</item>
+        <item>img_slide_headsetlogo_titanfall_atlas.png</item>
+        <item>img_slide_headsetlogo_starwars_starwars.png</item>
+    </string-array>
+    <string-array name="selectorLogos">
+        <item>img_slide_headsetlogo_selector_special_nla.png</item>
+        <item>img_slide_headsetlogo_selector_ps3_p11.png</item>
+        <item>img_slide_headsetlogo_selector_ps4_p12.png</item>
+        <item>img_slide_headsetlogo_selector_ps4_p4c.png</item>
+        <item>img_slide_headsetlogo_selector_ps3_pla.png</item>
+        <item>tbd_px3</item>
+        <item>img_slide_headsetlogo_selector_ps4_px4.png</item>
+        <item>img_slide_headsetlogo_selector_ps3_px22.png</item>
+        <item>img_slide_headsetlogo_selector_ps3_px22.png</item>
+        <item>img_px51_slidepanel.png</item>
+        <item>TB_BBKiosk_XraySlidder_AV_001.png</item>
+        <item>TB_BBKiosk_SierraSlidder_AV_001_01.png</item>
+        <item>img_slide_headsetlogo_selector_ps4_stealth400.png</item>
+        <item>img_slide_headsetlogo_ps4_stealth500p.png</item>
+        <item>img_slide_headsetlogo_selector_xboxone_stealth500x.png</item>
+        <item>img_slider_titanfall_atlas.png</item>
+        <item>img_slide_headsetlogo_selector_xb360_x12.png</item>
+        <item>img_slide_headsetlogo_selector_xb360_x12.png</item>
+        <item>img_slide_headsetlogo_selector_xb360_x32.png</item>
+        <item>TB_BBKiosk_x42Slidder_AV_001.png</item>
+        <item>img_slide_headsetlogo_selector_xb360_xl1.png</item>
+        <item>TB_BBKiosk_xLaSlidder_AV_001.png</item>
+        <item>img_xp510_slide_panel.png</item>
+        <item>img_xp7_slide_panel.png</item>
+        <item>img_slide_headsetlogo_selector_xbone_xofour.png</item>
+        <item>img_slide_headsetlogo_selector_xbone_xoone.png</item>
+        <item>img_slide_headsetlogo_selector_xbone_xoseven.png</item>
+        <item>img_slide_headsetlogo_selector_pc1_z11.png</item>
+        <item>img_z22_slide_panel.png</item>
+        <item>img_z300_slide_panel.png</item>
+        <item>img_slide_headsetlogo_selector_pc2_z60.png</item>
+        <item>img_slide_headsetlogo_selector_pc3_recon320.png</item>
+        <item>img_slide_headsetlogo_selector_ps4_elite800.png</item>
+				<item>img_slide_headsetlogo_selector_cod_prestige.png</item>
+        <item>img_slide_headsetlogo_selector_hots_heroesof_thestorm.png</item>
+        <item>img_slide_headsetlogo_selector_marvel_disneysuperheroes.png</item>
+        <item>img_slide_headsetlogo_selector_cod_sentineltaskforceps4.png</item>
+        <item>img_slide_headsetlogo_selector_cod_sentineltaskforcex1.png</item>
+        <item>img_slide_headsetlogo_selector_titanfall_atlas.png</item>
+        <item>img_slide_headsetlogo_selector_starwars_starwars.png</item>
+    </string-array>
+    <string-array name="sliderHType">
+        <item>WII U™ STEREO GAMING HEADSET</item>
+        <item>PS3® AMPLIFIED STEREO GAMING HEADSET</item>
+        <item>AMPLIFIED STEREO GAMING HEADSET FOR PLAYSTATION® 4</item>
+        <item>CHAT COMMUNICATOR FOR PLAYSTATION® 4</item>
+        <item>AMPLIFIED STEREO GAMING HEADSET</item>
+        <item>tbd_px3</item>
+        <item>WIRELESS DOLBY® SURROUND SOUND GAMING HEADSET</item>
+        <item>AMPLIFIED UNIVERSAL GAMING HEADSET</item>
+        <item>AMPLIFIED UNIVERSAL GAMING HEADSET</item>
+        <item>img_px51_slidepanel</item>
+        <item>TB_BBKiosk_XraySlidder_AV_001</item>
+        <item>TB_BBKiosk_SierraSlidder_AV_001_01</item>
+        <item>WIRELESS STEREO GAMING HEADSET</item>
+        <item>WIRELESS DTS SURROUND SOUND GAMING HEADSET</item>
+        <item>WIRELESS DTS SURROUND SOUND GAMING HEADSET</item>
+        <item>img_slider_titanfall_atlas</item>
+        <item>AMPLIFIED STEREO GAMING HEADSET</item>
+        <item>AMPLIFIED STEREO GAMING HEADSET</item>
+        <item>WIRELESS AMPLIFIED STEREO GAMING HEADSET</item>
+        <item>TB_BBKiosk_x42Slidder_AV_001</item>
+        <item>AMPLIFIED STEREO GAMING HEADSET</item>
+        <item>TB_BBKiosk_xLaSlidder_AV_001</item>
+        <item>img_xp510_slide_panel</item>
+        <item>img_xp7_slide_panel</item>
+        <item>HIGH-PERFORMANCE XBOX ONE™ GAMING HEADSET</item>
+        <item>STEREO GAMING HEADSET</item>
+        <item>PREMIUM XBOX ONE™ GAMING HEADSET</item>
+        <item>PC GAMING STERO HEADSET</item>
+        <item>img_z22_slide_panel</item>
+        <item>img_z300_slide_panel</item>
+        <item>DTS SURROUND SOUND WIRED PC GAMING HEADSET</item>
+        <item>WIRED DOLBY SURROUND SOUND PC GAMING HEADSET</item>
+        <item>WIRELESS NOISE-CANCELLING DTS SURROUND SOUND GAMING HEADSET</item>
+        <item>SPECIAL EDITION PREMIUM GAMING HEADSET</item>
+        <item>STEREO PC GAMING HEADSET</item>
+        <item>MULTI-PLATFORM GAMING HEADSET</item>
+        <item>SPECIAL EDITION AMPLIFIED STEREO GAMING HEADSET</item>
+        <item>SPECIAL EDITION STEREO GAMING HEADSET</item>
+        <item>OFFICIALLY LICENSED TITANFALL GAMING HEADSET</item>
+        <item>OFFICIALLY LICENSED PC AND MOBILE GAMING STEREO HEADSET</item>
+    </string-array>
+    
+    <string-array name="sliderDesign">
+        <item>DESIGNED FOR WII U™/3DS/MOBILE</item>
+        <item>DESIGNED FOR PS3™</item>
+        <item>DESIGNED FOR PS4™, PS VITA™, \u0026 MOBILE GAMING</item>
+        <item>DESIGNED FOR PS4™, ALSO WORKS WITH PC / MAC, MOBILE</item>
+        <item>DESIGNED FOR PS3™</item>
+        <item>tbd_px3</item>
+        <item>DESIGNED FOR PS4™, PS3™, XBOX 360®, MOBILE</item>
+        <item>DESIGNED FOR PS3™, XBOX 360® \u0026 PC / MAC®, COMPATIBLE WITH PS4™</item>
+        <item>DESIGNED FOR PS3™, Xbox 360® \u0026 PC / Mac®, COMPATIBLE WITH PS4™</item>
+        <item>img_px51_slidepanel</item>
+        <item>TB_BBKiosk_XraySlidder_AV_001</item>
+        <item>TB_BBKiosk_SierraSlidder_AV_001_01</item>
+        <item>DESIGNED FOR PS4™, PS3™ \u0026 MOBILE GAMING</item>
+        <item>DESIGNED FOR PS4™, PS3™ \u0026 MOBILE GAMING</item>
+        <item>DESIGNED FOR XBOX ONE® \u0026 MOBILE GAMING</item>
+        <item>img_slider_titanfall_atlas</item>
+        <item>DESIGNED FOR XBOX® 360</item>
+        <item>DESIGNED FOR XBOX® 360</item>
+        <item>DESIGNED FOR XBOX® 360</item>
+        <item>TB_BBKiosk_x42Slidder_AV_001</item>
+        <item>DESIGNED FOR XBOX 360®</item>
+        <item>TB_BBKiosk_xLaSlidder_AV_001</item>
+        <item>img_xp510_slide_panel</item>
+        <item>img_xp7_slide_panel</item>
+        <item>DESIGNED FOR XBOX ONE® \u0026 MOBILE GAMING</item>
+        <item>DESIGNED FOR XBOX ONE® \u0026 MOBILE GAMING</item>
+        <item>DESIGNED FOR XBOX ONE® \u0026 MOBILE GAMING</item>
+        <item>DESIGNED FOR PC/MAC® \u0026 MOBILE GAMING</item>
+        <item>img_z22_slide_panel</item>
+        <item>img_z300_slide_panel</item>
+        <item>DESIGNED FOR PC/MAC® \u0026 MOBILE GAMING</item>
+        <item>DESIGNED FOR PC \u0026 MOBILE</item>
+        <item>DESIGNED FOR PS4™, PS3™ \u0026 MOBILE</item>
+        <item>DESIGNED FOR XBOX ONE® \u0026 MOBILE GAMING</item>
+        <item>DESIGNED FOR PC, MAC®, MOBILE GAMING</item>
+        <item>DESIGNED FOR PS4™, XBOX 360®, WII U™, PC, MAC®, MOBILE</item>
+        <item>DESIGNED FOR PS4™, MOBILE GAMING</item>
+        <item>DESIGNED FOR XBOX ONE®, MOBILE GAMING</item>
+        <item>DESIGNED FOR XBOX ONE™, XBOX 360® \u0026 PC</item>
+        <item>DESIGNED FOR PC, MAC®, MOBILE GAMING</item>
+    </string-array>
+    
+    <!-- The arrays that follow hold the copy - the per headset content for the slider and details screens
+    	 The details array begins with the details heading description which may or may not be empty
+    	 The exception is the special edition NLA since it has no heading description and I wrote that logic first -->
+    <string-array name="nlaBullets">
+        <item>Officially Licensed by Nintendo</item>
+        <item>Stereo Headset Designed for Wii U™</item>
+        <item>Premium 40mm Speakers</item>
+        <item>Sound Isolating Ear Cushions</item>
+    </string-array>
+    <string-array name="nlaDetails">
+        <item> </item>
+        <item>Large 40mm Speakers</item>
+        <item>40mm speakers deliver rich stereo sound.</item>
+        <item>3.5mm, 4-Pole Gold-Plated Connector</item>
+        <item>Easily connects to the Wii U™ GamePad controller, and also works with the Nintendo 3DS, smartphones, and tablets.</item>
+        <item>Volume and Mic Mute Controls</item>
+        <item>Quick access to game volume and mic mute controls.</item>
+        <item>Sound Isolating Ear Cushions</item>
+        <item>Block out distractions and immerse yourself in the game.</item>
+        <item>Comfort</item>
+        <item>Soft padded ear cushions and twist-cup design to rest flat on your shoulders.</item>
+        <item>Crystal Clear Communications</item>
+        <item>High-sensitivity microphone with flexible boom.</item>
+    </string-array>
+    <string-array name="p11Bullets">
+        <item>Amplified Stereo Audio</item>
+        <item>Bass Boost</item>
+        <item>Independent Volume Controls</item>
+        <item>Microphone Monitor</item>
+    </string-array>
+    <string-array name="p11Details">
+        <item> </item>
+        <item>Amplified Directional Audio</item>
+        <item>Enhances game sounds for a more immersive experience</item>
+        <item>Oversized 50mm Speakers</item>
+        <item>Premium sound from from full-bandwidth speaker drivers.</item>
+        <item>Mic Monitor</item>
+        <item>Lets you hear what you’re saying while communicating with others.</item>
+        <item>Bass Boost</item>
+        <item>Adds more depth and realism to the game audio.</item>
+        <item>Independent Volume Controls</item>
+        <item>Allows personalized balancing of game and chat audio.</item>
+        <item>PC Compatible</item>
+        <item>Also works with PC games and online chat.</item>
+        <item>USB Powered</item>
+        <item>No batteries required.</item>
+    </string-array>
+    <string-array name="p12Bullets">
+        <item>High-quality digital game \u0026 chat audio for PS4™</item>
+        <item>Awesome sound from full-range 50mm speakers \u0026 bass boost</item>
+        <item>Easy to setup and use</item>
+        <item>Perfect for PS Vita™, tablets and mobile devices</item>
+    </string-array>
+    <string-array name="p12Details">
+        <item>Get an amazing PlayStation® 4 audio experience with the Ear Force® P12. Designed specifically for PS4, the P12 is easy to set up and delivers thunderous amplified audio through 50mm speakers without disturbing others. P12 is also great for mobile gaming including PS Vita™!</item>
+        
+        <item>Amplified Stereo Sound</item>
+        <item>P12 delivers high-quality digital and chat for an enhanced audio experience.</item>
+        <item>High-Quality Chat</item>
+        <item>High-sensitivity microphone on a  flexible boom keeps you heard loud and clear.</item>
+        <item>Simple Setup</item>
+        <item>One simple USB connection delivers all game and chat audio.</item>
+        <item>Mobile Gaming Versatility</item>
+        <item>Disconnect from the in-line amp to use the P12 on the go with your mobile devices including the PS Vita™.</item>
+        <item>Microphone Monitor</item>
+        <item>Hear your voice in the headset so you don’t have to shout.</item>
+        <item>Amazing Sound \u0026 Comfort</item>
+        <item>Full-range 50mm speakers supported by breathable, around-the-ear mesh ear cushions for hours of comfort and noise-isolation.</item>
+        <item>Adjustable Bass Boost</item>
+        <item>Dial up the thump with variable Bass Boost.</item>
+        <item>Convenient In-Line Controls</item>
+        <item>Master volume, Bass Boost and mic mute controls at your fingertips.</item>
+        <item>For All Your Audio Needs</item>
+        <item>Headsets aren’t just great for games. Use the P12 for enjoying streaming movies and TV from Netflix™ and Hulu Plus™ or Blu-Ray Disc. Crank up your tunes on music services like Pandora™ and then chat with friends or make mobile calls!</item>
+    </string-array>
+    <string-array name="p4cBullets">
+        <item>High Sensitivity Microphone</item>
+        <item>40mm Speaker to High-Fidelity Chat Audio</item>
+        <item>Slotted Ear Cut Design for Clear Game Audio</item>
+        <item>In-Line Mute Switch</item>
+    </string-array>
+    <string-array name="p4cDetails">
+        <item>The Ear Force® P4c Chat Communicator improves your PS4™ gaming experience, allowing you to communicate and strategize with your teammates more accurately and more comfortably than a standard communicator. The P4c features a 40mm speaker for incoming chat and a unique slotted ear cup design that lets you hear external game sound and chat at the same time, so you’ll never miss out on the game action.</item>
+        
+        <item>Superior Chat Quality</item>
+        <item>High sensitivity microphone with flexible boom and premium 40mm speaker for high-fidelity chat.</item>
+        <item>Lightweight \u0026 Comfortable</item>
+        <item>Fully adjustable and lightweight with breathable, fabric mesh ear cushions for long gaming sessions.</item>
+        <item>Slotted Ear Cup</item>
+        <item>Hear the game sound around you while you chat instead of blocking it with in-ear or on-ear communicators.</item>
+        <item>In-line Chat Volume Control</item>
+        <item>Allows for personalized balancing of chat volume.</item>
+        <item>Mic Mute</item>
+        <item>Convenient in-line mic mute switch.</item>
+    </string-array>
+    <string-array name="plaBullets">
+        <item>Amplified Audio</item>
+        <item>Bass Boost</item>
+        <item>Independent Volume Controls</item>
+        <item>Sound Isolating Ear Cushions</item>
+    </string-array>
+    <string-array name="plaDetails">
+        <item> </item>
+        <item>Amplified Audio</item>
+        <item>Enhances game sounds for a more immersive experience.</item>
+        <item>Premium 40mm Speakers</item>
+        <item>Delivers bone-rattling bass and pure, crisp highs.</item>
+        <item>Microphone Monitor</item>
+        <item>Lets you hear what you’re saying while communicating with others.</item>
+        <item>Bass Boost</item>
+        <item>Built-in bass boost adds more depth and realism to the game audio.</item>
+        <item>Independent Volume Controls</item>
+        <item>Allows personalized balancing of game and chat sounds.</item>
+        <item>PC/Mac Compatible</item>
+        <item>Also works with PC/Mac games and online chat.</item>
+        <item>USB Powered</item>
+        <item>No batteries required.</item>
+    </string-array>
+    <string-array name="px22Bullets">
+        <item>Licensed by Major League Gaming</item>
+        <item>Redesigned Inline Amplifier</item>
+        <item>Adjustable Bass \u0026 Volume Levels</item>
+        <item>Works with PS3™, Xbox 360®, PC / Mac \u0026 Mobile</item>
+    </string-array>
+    <string-array name="px22Details">
+        <item> </item>
+        <item>Adjustable Bass \u0026 Treble Levels</item>
+        <item>Tune bass and treble levels to add depth and realism.</item>
+        <item>Independent Volume Controls</item>
+        <item>Separate game \u0026 chat volume controls plus mic mute right on the inline amp.</item>
+        <item>Dynamic Chat Boost™</item>
+        <item>Automatically raises the volume of chat during intense, explosive game situations.</item>
+        <item>Comfortable, Lightweight Design</item>
+        <item>Breathable mesh cushions and soft, padded headband for hours of comfort.</item>
+        <item>Phone/Music Input</item>
+        <item>Connect a mobile phone or digital media player to take calls or enjoy your favorite music while you game.</item>
+        <item>Variable Mic Monitor</item>
+        <item>Adjust the volume of your voice in the headset while speaking.</item>
+        <item>USB Powered</item>
+        <item>No AC adapters or batteries ever required.</item>
+        <item>Premium 50mm Speakers</item>
+        <item>Delivers bone-rattling bass and pure, crisp highs.</item>
+        <item>Use it on Everything!</item>
+        <item>Works with PS3™, Xbox 360®, PC / Mac and mobile devices like smartphones, tablets, PS Vita™ and more.</item>
+    </string-array>
+    <string-array name="stealth400Bullets">
+        <item>Completely Wireless Game and Chat Audio for PS4™ \u0026 PS3™</item>
+        <item>Built-in Rechargeable Battery Provides Over 15 Hours of Play</item>
+        <item>Four EQ Presets, Including Treble and Bass Boosts</item>
+        <item>Separate Game and Chat Volume Controls</item>
+    </string-array>
+    <string-array name="stealth400Details">
+        <item>It’s time to ditch the wires. The Turtle Beach® Ear Force® Stealth 400 eliminates wires to your controller or console so you can have interference-free, totally wireless audio on PS4 or PS3. Plus the slick new headset is designed for comfort and allows quick access to game and chat volume controls.</item> 
+        <item>Crystal Clear Wireless</item>
+        <item>Intelligent channel hopping for an interference-free wireless experience.</item> 
+        <item>Rechargeable Battery</item>
+        <item>Built-in rechargeable battery delivers over 15 hours of wireless gaming.</item>
+        <item>Four EQ Presets</item>
+        <item>Personalize your audio with extra bass, treble or a combo or both.</item>
+        <item>Separate Volume Controls</item>
+        <item>Set game and chat volume levels right on the headset.</item>
+        <item>Awesome Turtle Beach Audio </item>
+        <item>Acoustically angled, large 50mm Neodymium speakers deliver butt-kicking audio.</item>
+        <item>Mobile Gaming</item>
+        <item>Use the included Mobile Cable* for wired gaming, music and movies on PS Vita™ or any mobile device.</item>
+        <item>Never Miss a Text or Call</item>
+        <item>Hook up your mobile phone to hear text notifications or take calls while gaming.</item>
+        <item>Comfortable and Quiet</item>
+        <item>Breathable, around-the-ear mesh ear cushions for hours of comfort and noise-isolation.</item>
+        <item>Stop SHOUTING!</item>
+        <item>Mic Monitoring lets you hear your own voice in the headset to avoid shouting.</item>
+        <item>Removable Mic Boom</item>
+        <item>Be heard clearly through an adjustable high-sensitivity mic you can remove when on the go.</item>
+        <item>For All Your Audio Needs</item>
+        <item>Headsets aren’t just great for games. Use the Stealth 400 for enjoying streaming video, Blu-Ray Disc movies, music and chatting with friends!</item>
+        <item></item> 
+        <item>*Mobile device support for wired phone calls and stereo audio only.</item>
+    </string-array>
+    <string-array name="stealth500PBullets">
+        <item>Immersive DTS Headphone: X 7.1 Channel Surround Sound</item>
+        <item>DTS Surround Sound Modes, Each with EQ Presets</item>
+        <item>Built-in Rechargeable Battery Provides Over 15 Hours of Play</item>
+        <item>Completely Wireless Game and Chat</item>
+    </string-array>
+    <string-array name="stealth500PDetails">
+        <item>The Turtle Beach® Ear Force® Stealth 500P Wireless Gaming Headset brings immersive DTS Headphone:X 7.1 Channel Surround Sound to PS4 and PS3. The all-new headset design, with 50mm Neodymium speakers, allows for quick access to vital audio customization and controls, plus its rechargeable battery delivers over 15 gaming hours per charge.</item>
+        <item>DTS Headphone:X 7.1 Surround Sound</item>
+        <item>DTS Headphone:X delivers an amazing, 3D 360-degree sound stage with unmatched spatial accuracy.</item>
+        <item>Crystal Clear Wireless</item>
+        <item>Intelligent channel hopping for an interference-free wireless experience.</item>
+        <item>DTS Surround Sound Modes</item>
+        <item>Custom DTS Surround Sound Modes, each with four EQ Presets, further immerse you in your favorite games, movies and music.</item>
+        <item>Long-Life Rechargeable Battery</item>
+        <item>Built-in rechargeable battery delivers over 15 hours of wireless gaming.</item>
+        <item>Separate Volume Controls</item>
+        <item>Set your mix of game and chat volume levels right on the headset.</item>
+        <item>Comfortable and Quiet</item>
+        <item>Synthetic leather ear cushions provide hours of comfort and noise-isolation.</item>
+        <item>High-Quality Chat</item>
+        <item>Be heard clearly through an adjustable, high-sensitivity, removable mic.</item>
+        <item>Stop SHOUTING!</item>
+        <item>Mic Monitoring lets you hear your own voice in the headset to avoid shouting.</item>
+        <item>Never Miss a Text or Call</item>
+        <item>Hook up your mobile phone to hear text notifications or take calls while gaming.</item>
+        <item>Mobile Device Versatility</item>
+        <item>Connect the included Mobile Cable for wired gaming on any mobile device.</item>
+    </string-array>
+    <string-array name="stealth500XBullets">
+		<item>Completely Wireless Game and Chat Audio for Xbox One</item>
+		<item>Immersive DTS Headphone:X 7.1 Channel Surround Sound</item>
+		<item>DTS Surround Sound Modes, Each with Genre-Based Presets</item>
+		<item>Dynamic Chat Boost™ and Mic Monitoring</item>
+    </string-array>
+    <string-array name="stealth500XDetails">
+		<item>No controller adapters, no cables, just completely wireless DTS Headphone: X 7.1 Channel Surround Sound that puts you in the center of the action. Designed for Xbox One, the powerful Turtle Beach® Ear Force® Stealth 500X delivers immersive, interference-free wireless audio quality at up to 15 hours per charge.</item>
+		
+		<item>Crystal Clear Wireless</item>
+		<item>Intelligent channel hopping for an interference-free wireless experience. </item>
+		<item>DTS Headphone:X 7.1 Surround Sound</item>
+		<item>DTS Headphone:X delivers an amazing, 3D 360-degree sound stage with unmatched spatial accuracy. </item>
+		<item>DTS Surround Sound Modes</item>
+		<item>Custom DTS Surround Sound modes immerse you in your favorite games, movies and music.</item>
+		<item>EQ Presets</item>
+		<item>DTS Surround Sound Modes each with genre-based presets to further customize your audio.</item>
+		<item>Long-Life Rechargeable Battery</item>
+		<item>Built-in rechargeable battery delivers up to 15 hours of wireless gaming.</item>
+		<item>Separate Volume Controls</item>
+		<item>Set your mix of game and chat volume levels right on the headset.</item>
+		<item>Stop SHOUTING!</item>
+		<item>Mic Monitoring lets you hear your own voice in the headset to avoid shouting.</item>
+		<item>Dynamic Chat Boost™</item>
+		<item>Even during loud gameplay spikes, chat volume automatically rises to ensure you never miss a command.</item>
+		<item>Never Miss a Text or Call</item>
+		<item>Hook up your mobile phone to hear text notifications or take calls while gaming.</item>
+		<item>Mobile Device Versatility</item>
+		<item>Connect the included Mobile Cable for wired gaming on any mobile device.</item>
+		<item>Hear Everything</item>
+		<item>Enjoy wireless Xbox One audio for streaming video, music and even Skype with friends.</item>
+    </string-array>
+    <string-array name="x12Bullets">
+        <item>Amplified Stereo Audio</item>
+        <item>Variable Bass Boost</item>
+        <item>Independent Volume Controls</item>
+        <item>Microphone Monitor</item>
+    </string-array>
+    <string-array name="x12Details">
+        <item> </item>
+        <item>Amplified Audio</item>
+        <item>Enhances game sounds for a more immersive experience.</item>
+        <item>Oversized 50mm Speakers</item>
+        <item>Premium sound from full-bandwidth speaker drivers.</item>
+        <item>Mic Monitor</item>
+        <item>Hear your voice in the headset, so you won’t have to shout to hear what you are saying.</item>
+        <item>Variable Bass Boost</item>
+        <item>Add depth and realism to the gaming experience with strong yet clear bass.</item>
+        <item>Independent Volume Controls</item>
+        <item>Allow personalized balancing of game and chat sounds.</item>
+        <item>PC Compatible</item>
+        <item>Delivers the ultimate gaming experience for Xbox 360 and PC.</item>
+        <item>USB Powered</item>
+        <item>No batteries or AC adapter required.</item>
+    </string-array>
+    <string-array name="x32Bullets">
+        <item>Wireless Digital Game Sound</item>
+        <item>Dual-Band Wireless</item>
+        <item>Equalizer Presets</item>
+        <item>Dynamic Chat Boost™</item>
+    </string-array>
+    <string-array name="x32Details">
+        <item> </item>
+        <item>2.4/5GHz Dual-Band WiFi</item>
+        <item>Selects the optimum frequency in the 2.4GHz/5GHz spectrums, virtually eliminating interference.</item>
+        <item>Digital RF Wireless Game Sound</item>
+        <item>Uncompressed digital audio signal provides CD-quality game sound.</item>
+        <item>Amplified Audio</item>
+        <item>Enhances game sounds for a more immersive experience.</item>
+        <item>Dynamic Chat Boost™</item>
+        <item>Chat volume automatically increases as the game volume gets louder.</item>
+        <item>Equalizer (EQ) Presets</item>
+        <item>Multiple EQ presets including bass and treble boost combinations.</item>
+        <item>Sound Field Expander Presets</item>
+        <item>Boost the sound levels on the left and right sides for better tactical accuracy.</item>
+        <item>Auxiliary Input</item>
+        <item>Connect a digital music player and listen to your favorite songs while gaming.</item>
+        <item>Microphone Monitor</item>
+        <item>Hear your voice in the headset so you won’t have to shout.</item>
+        <item>Independent Volume Controls</item>
+        <item>Allows for personalized balancing of game and chat audio.</item>
+        <item>Massive 50mm Speakers</item>
+        <item>Delivers superior audio quality with crisp highs and deep, rumbling lows.</item>
+    </string-array>
+    <string-array name="xl1Bullets">
+        <item>Amplified Audio</item>
+        <item>Bass Boost</item>
+        <item>Microphone Monitoring</item>
+    </string-array>
+    <string-array name="xl1Details">
+        <item> </item>
+        <item>Amplified Audio</item>
+        <item>Enhances game sounds for a more immersive experience.</item>
+        <item>Premium 50mm Speakers</item>
+        <item>Delivers bone-rattling bass and pure, crisp highs.</item>
+        <item>Microphone Monitor</item>
+        <item>Lets you hear what you’re saying while communicating with others.</item>
+        <item>Bass Boost</item>
+        <item>Built-in bass boost adds more depth and realism to the game audio.</item>
+        <item>Independent Volume Controls</item>
+        <item>Allows personalized balancing of game and chat sounds.</item>
+        <item>USB Powered</item>
+        <item>No batteries required.</item>
+    </string-array>
+    <string-array name="xofourBullets">
+        <item>Wireless to the Xbox One Console</item>
+        <item>Full Xbox One Chat Functionality</item>
+        <item>Lightweight \u0026 Comfortable</item>
+        <item>Game \u0026 Chat Volume Mix Controls</item>
+    </string-array>
+    <string-array name="xofourDetails">
+        <item>The Ear Force® XO FOUR is the perfect audio upgrade for the Xbox One™ delivering high quality sound to get the most from your games, music, TV and movies. Stay connected to friends through Xbox Live® and Skype™ with clear, crisp chat audio and microphone clarity on Turtle Beach headsets deliver.</item>
+        
+        <item>Be immersed.</item>
+        <item>Headphones are tuned to provide the highest quality audio from Xbox One™ Audio Adapter.</item>
+        <item>Be social.</item>
+        <item>High-quality removable mic for chat on Xbox One™, Skype™ and Xbox Live®.</item>
+        <item>Be in control.</item>
+        <item>Adjust fame and chat volume for the perfect audio mix.</item>
+        <item>Be mobile.</item>
+        <item>Use the XO FOUR anywhere with your tablet or portable game consoles.</item>
+        <item>Be comfortable.</item>
+        <item>A soft, comfortable leather headband and mesh ear cushions provide all-day comfort.</item>
+        <item>Be stylish.</item>
+        <item>New headset look and feel complements iconic design of Xbox One™.</item>
+        <item>Be entertained.</item>
+        <item>Headsets aren’t just great for games. Enjoy your favorite movies and TV shows with superior quality sound. Then crank up your tunes from music services like Xbox Music™ or Skype™ with friends!</item>
+    </string-array>
+    <string-array name="xooneBullets">
+        <item>Wireless to the Xbox One Console</item>
+        <item>Full chat functionality including mic mute</item>
+        <item>Bass Boost for powerful, rumbling lows</item>
+        <item>Variable Mic Monitor so you can hear yourself in the headset</item>
+    </string-array>
+    <string-array name="xooneDetails">
+        <item>Boost your gaming experience with the all-new Ear Force® XO ONE Stereo Gaming Headset from Turtle Beach. Designed to deliver Xbox One™ game and chat audio straight to your ears, you’ll hear every detail of your favorite games, movies and more through powerful, 50mm speakers.</item>
+        <item>Amazing Sound</item>
+        <item>Premium 50mm speakers generate crisp highs and thumping lows.</item>
+        <item>Ear Force XO Headset Audio Controller</item>
+        <item>Included Audio Controller puts Game-Chat Mix, Mic Mute, adjustable Mic Monitoring, Bass Boost and Master Volume controls at your fingertips.</item>
+        <item>High-Quality Chat</item>
+        <item>High-sensitivity, removable mic for chat on Xbox Live and Skype™.</item> 
+        <item>Lightweight and Comfortable</item>
+        <item>Smaller and lighter headset design with around-the-ear, mesh ear cushions for longer game sessions.</item>
+        <item>Mobile Gaming Versatility</item>
+        <item>Disconnect from the Audio Controller to use the XO ONE with your mobile devices.</item>
+        <item>For All Your Audio Needs</item>
+        <item>XO ONE isn’t just great for games. Enjoy your favorite movies and TV shows with high quality sound. Then crank up your tunes from music services like Xbox Music™ or Skype™ with friends!</item>
+    </string-array>
+    <string-array name="xosevenBullets">
+        <item>Wireless to the Xbox One Console</item>
+        <item>Full Xbox One Chat Functionality</item>
+        <item>Swappable Speaker Plates</item>
+        <item>Noise-Isolating Ear Cushions</item>
+    </string-array>
+    <string-array name="xosevenDetails">
+        <item>The Ear Force XO SEVEN is the ultimate companion for the Xbox One™, built with tournament grade durability and superior quality audio components. Experience everything Xbox One™ has to offer and get the most from your games, music, TV shows and movies.</item>
+        
+        <item>Noise Isolating</item>
+        <item>Memory foam cushions create a noise-isolating barrier to outside distractions.</item>
+        <item>Top Quality</item>
+        <item>Headphones are tuned to provide the highest quality audio from the Xbox One Audio Adapter.</item>
+        <item>Customize It</item>
+        <item>Customize the XO SEVEN with swappable speaker plates available in dozens of designs from turtlebeach.com/customizedplates</item>
+        <item>Stay in Touch</item>
+        <item>Chat in game or with friends on Skype and Xbox LIVE using the high-quality, competition proven, noise-cancelling mic.</item>
+        <item>Easily Adjustable Stand</item>
+        <item>Adjust game and chat volume for the perfect mix.</item>
+        <item>Great for On-the-Go</item>
+        <item>Remove the mic, swap in the mobile cable with inline mic and use the XO SEVEN with all your mobile devices.</item>
+        <item>For Your Entertainment</item>
+        <item>Ear Force Atlas isn’t just great for Titanfall. Enjoy your favorite movies and TV shows with superior quality sound. Then crank up your tunes from music services like Xbox Music™ or Skype™ with friends!</item>
+        <item>Mobile Gaming</item>
+        <item>Perfect for gaming on your mobile phone, tablet or portable game devices.</item>
+        <item>Massive 50mm Speakers</item>
+        <item>Delivers superior audio quality with crisp highs and deep, rumbling lows.</item>
+    </string-array>
+    <string-array name="z11Bullets">
+        <item>Acoustically Angled Speakers</item>
+        <item>In-line Volume Controls</item>
+        <item>3.5mm, 4-Pole Connecter</item>
+        <item>Full-Range 50mm Speakers</item>
+    </string-array>
+    <string-array name="z11Details">
+        <item> </item>
+        
+		<item>Acoustically Angled Speakers</item>
+		<item>Delivers more realistic directional audio perception.</item>
+		<item>In-line Volume Controls</item>
+		<item>Quick access to game volume and mic mute controls.</item>
+		<item>3.5mm, 4-Pole Connector and PC Adapter Cable</item>
+		<item>Easily connects to most PC and Mac® computers as well as mobile devices and tablets.</item>
+		<item>Comfortable \u0026 Lightweight</item>
+		<item>Built for marathon game sessions with breathable mesh ear cushions and durable design.</item>
+		<item>Amazing Audio Quality Ear Force Z11</item>
+		<item>Amplified 50mm speakers set in acoustically tuned ear cups for high-fidelity audio.</item>
+		<item>Crystal Clear Chat</item>
+		<item>High-sensitivity microphone with flexible boom for clear communication.</item>
+    </string-array>
+    <string-array name="z60Bullets">
+		<item>Huge 60mm Neodymium Speakers</item>
+		<item>7.1 Channel DTS Headphone:X Surround Sound</item> 
+		<item>Expansive Audio Surround Sound Modes</item> 
+		<item>Easy Plug-and-Play Set Up</item> 
+    </string-array>
+    <string-array name="z60Details">
+		<item>Unleash powerful 7.1 channel DTS Headphone:X Surround Sound on any PC or Mac with the Ear Force® Z60. Delivering incredible bass response through PC gaming’s largest speakers, get the audio advantage from Surround Sound Audio Modes, Dynamic Chat Boost™ and fingertip audio controls with no software to install!</item>
+	
+		<item>Revolutionary Surround Sound</item>
+		<item>DTS Headphone:X delivers an amazing, 3D 360-degree sound stage with unmatched accuracy. And with a button press, custom DTS Surround Sound modes will completely immerse you in your favorite games, movies and music.</item>
+		<item>Amazing Sound and Comfort</item>
+		<item>Thunderous 60mm speakers supported by breathable, around-the-ear mesh ear cushions for hours of comfort and noise-isolation. </item>
+		<item>Surround Sound Modes</item>
+		<item>Immersive DTS Surround Sound Audio Modes place you in the middle of the action.</item>
+		<item>Simple Plug and Play USB Setup</item>
+		<item>Simple USB setup with no software to install or manage. </item>
+		<item>Dynamic Chat Boost™</item>
+		<item>Chat volume automatically increases as the game volume gets louder so you never miss a command.</item>
+		<item>Mobile Gaming Versatility</item>
+		<item>Pop out the mic, disconnect from the control unit and use the Z60 on with all your mobile devices.</item>
+		<item>Microphone Monitor</item>
+		<item>Hear your voice in the headset while speaking, so you never have to shout.</item>
+		<item>Quick Access In-Line Controls</item>
+		<item>Convenient fingertip controls including separate game and chat volume controls.</item>
+		<item>For All Your PC Audio Needs</item>
+		<item>Headsets aren’t just great for games. Use the Z60 and its Surround Modes for enjoying streaming movies and TV from Netflix™ or Hulu Plus™. Crank up your tunes on music services like Pandora™ and then Skype™ with friends or make PC calls! </item>
+    </string-array>
+    <string-array name="recon320Bullets">
+        <item>7.1 Channel Dolby Surround Sound</item>
+        <item>Amplified 50mm Neodymium Speakers</item>
+        <item>In-line Controls for Volume and Mic Mute</item>
+        <item>Personalize with Swappable Speaker Plates</item>
+    </string-array>
+    <string-array name="recon320Details">
+		<item>Place yourself in the middle of the action with the Ear Force® Recon 320 Surround Sound Gaming Headset. Pinpoint audio cues with amazing Dolby 7.1 Surround Sound†, enjoy hours of comfort and noise-isolation with around-the-ear, breathable mesh ear cushions and personalize the Recon 320 with swappable speaker plates.</item>
+		
+		<item>Dolby 7.1 Surround Sound</item>
+		<item>Dolby 7.1 Surround Sound takes the excitement of your games to the next level and truly immerses you in the action with more depth, realism and spatial accuracy.</item>
+		<item>Full-Range Audio</item>
+		<item>Amplified 50mm Neodymium speakers deliver crisp highs and powerful lows.</item>
+		<item>Swappable Speaker Plates</item>
+		<item>Personalize the look of your Recon 320 with a new design from TurtleBeach.com/plates.</item>
+		<item>Quick Access In-Line Controls</item>
+		<item>Convenient in-line PC controls for volume and microphone mute.</item>
+		<item>Mobile Versatility</item>
+		<item>Remove the mic boom and connect the Mobile Cable with In-Line Mic to use your Recon 320 with all your mobile devices.</item>
+		<item>High-Quality Chat</item>
+		<item>High-sensitivity microphone on a flexible, removable boom keeps you heard loud and clear.</item>
+		<item>Simple Plug and Play Setup</item>
+		<item>A single USB connection for PC or a 3.5mm jack on mobile devices.</item>
+		<item></item>
+		<item>*Mobile set up does not support surround sound.</item>
+		<item></item>
+		<item>†Dolby Surround Sound via free software download from www.turtlebeach.com/Recon320. Dolby Surround Sound driver is only compatible with Windows 7, Windows 8, and Windows 8.1. Please note that Windows XP and Windows Vista users will get game audio in stereo.</item>
+	</string-array>
+    <string-array name="elite800Bullets">
+		<item>Active Noise Cancellation for Console and Mobile Use</item>
+		<item>DTS Headphone: X 7.1 Channel Surround Sound</item>
+		<item>DTS Surround Sound Modes, Each with Genre-Based Presets</item>
+		<item>Hidden Microphones \u0026 Magnetic Charging Stand</item>
+    </string-array>
+    <string-array name="elite800Details">
+		<item>Welcome to the future of gaming audio with the Turtle Beach Elite 800. Sporting Active Noise Cancellation, DTS Headphone:X 7.1 Channel Surround Sound and DTS Surround Sound modes for outstanding audio quality, Bluetooth and dual invisible boom-less mics also make it a perfect mobile headset. And with registration, you also get membership into the Turtle Beach Elite Program.</item>
+
+		<item>Silence is Golden</item>
+		<item>Eliminate unwanted distractions with active noise cancellation in console and mobile modes.</item>
+		<item>Crystal Clear Wireless</item>
+		<item>Intelligent channel hopping for an interference-free wireless experience.</item>
+		<item>DTS Headphone:X 7.1 Surround Sound</item>
+		<item>Creates an amazing, 3D 360-degree sound stage with unmatched spatial accuracy through 50mm speakers.</item>
+		<item>Enhanced DTS Surround Sound Modes and Presets</item>
+		<item>Custom DTS Surround Sound modes combine with enhanced Turtle Beach genre-specific presets to further immerse you in your favorite games, movies and music.</item>
+		<item>Hidden, High-Quality Microphones</item>
+		<item>Dual hidden microphones, with environmental mic presets ensure you are always heard—regardless of your surroundings.</item>
+		<item>Rechargeable Battery with Magnetic Charger</item>
+		<item>Built-in rechargeable battery and a low profile magnetic charging stand deliver up to 10 hours of wireless gaming without cables.</item>
+		<item>Bluetooth Versatility</item>
+		<item>Enjoy wireless Bluetooth connectivity with all your mobile devices including PS Vita™.</item>
+		<item>Companion App</item>
+		<item>The Ear Force Audio Hub app lets you instantly change presets using your mobile phone or tablet.</item>
+		<item>Dynamic Chat Boost™</item>
+		<item>Even during loud gameplay spikes, chat volume automatically rises to ensure you never miss a command.</item>
+		<item>Elite Membership with Purchase</item>
+		<item>You demand the ultimate in performance, so you should get the ultimate in benefits, including extended warranty and concierge product support. See turtlebeach.com/elite for complete details.</item>
+    </string-array>
+    <string-array name="prestigeBullets">
+        <item>Wireless to the Xbox One Console</item>
+				<item>Variable Mic Monitor and Multi-Step Bass Boost</item>
+				<item>Game-Chat Volume, Master Volume and Mic Controls</item>
+				<item>Tournament-Grade Build Quality, Premium 50mm Speakers</item>
+    </string-array>
+    <string-array name="prestigeDetails">
+        <item>The Call of Duty® Advanced Warfare Ear Force® Sentinel Prestige for Xbox One is the ultimate arsenal upgrade.  With its tournament-grade build quality, premium speakers and the all-new Ear Force Headset Audio Controller, the Sentinel Prestige will have you laser-focused on dominating your games.</item>
+				<item>Unmatched Audio</item>
+				<item>The Sentinel Prestige for Xbox One delivers unmatched game and chat for an enhanced audio experience through premium 50mm Neodymium speakers.</item>
+				<item>Includes Ear Force® Headset Audio Controller</item>
+				<item>Turtle Beach-created Headset Audio Controller adds sought-after features like Mic Monitoring and Bass Boost!</item>
+				<item>Variable Mic Monitoring</item>
+				<item>Stop the shouting by adjusting the level of your own voice heard in your headset.</item>
+				<item>Multi-Step Bass Boost</item>
+				<item>Dial up low-end thump with Multi-step Bass Boost for bone-jarring explosions.</item>
+				<item>Built to Compete</item>
+				<item>Tournament-build quality with comfortable synthetic leather ear cushions.</item>
+				<item>Swappable Speaker Plates</item>
+				<item>Add a new set of plates to personalize the look of your headset from TurtleBeach.com/plates.</item>
+				<item>High-Quality Chat</item>
+				<item>High-sensitivity, removable mic for chat on Xbox Live and Skype™.</item> 
+				<item>Simple Setup</item>
+				<item>Connect the included Headset Audio Controller to the Xbox One Controller for game and chat audio.</item>
+				<item>Mobile Gaming Versatility</item>
+				<item>Disconnect from the Audio Controller to use the Sentinel Prestige with your mobile devices.</item>
+				<item>For All Your Audio Needs</item>
+				<item>Headsets aren’t just great for games. Enjoy your favorite movies and TV shows with high quality sound. Then crank up your tunes from music services like Xbox Music™ or Skype™ with friends!</item> 
+    </string-array>
+    <string-array name="taskForceXboxBullets">
+        <item>Wireless to the Xbox One Console</item>
+		<item>Variable Mic Monitor and Multi-Step Bass Boost</item>
+		<item>Game-Chat Volume, Master Volume and Mic Controls</item>
+		<item>Massive, Full-Range 50mm Neodymium Speakers</item>
+    </string-array>
+    <string-array name="taskForceXboxDetails">
+        <item>The Call of Duty® Advanced Warfare Ear Force® Sentinel Task Force for Xbox One raises your battle readiness with Variable Mic Monitoring, Bass Boost, volume and chat controls. Wireless to the Xbox One Console and fitted with comfortable synthetic leather ear cushions, you’re ready for the future of online warfare.</item>
+		<item>Striking Sound</item>
+		<item>The Sentinel Strike Force for Xbox One delivers high-quality game and chat for an enhanced audio experience through full-range 50mm Neodymium speakers.</item>
+		<item>Includes Ear Force® Headset Audio Controller</item>
+		<item>Turtle Beach-created Headset Audio Controller adds sought-after features like Mic Monitoring and Bass Boost!</item>
+		<item>Variable Mic Monitoring</item>
+		<item>Stop the shouting by adjusting the level of your own voice heard in your headset.</item>
+		<item>Adjustable Bass Boost</item>
+		<item>Dial up low-end thump with Multi-step Bass Boost for bone-jarring explosions.</item>
+		<item>Lightweight Comfort</item>
+		<item>Synthetic leather ear cushions and an adjustable, padded headband for hours of comfort.</item>
+		<item>Swappable Speaker Plates</item>
+		<item>Add a new set of plates to personalize the look of your headset from TurtleBeach.com/plates.</item>
+		<item>High-Quality Chat</item>
+		<item>High-sensitivity, removable mic for chat on Xbox Live and Skype™.</item> 
+		<item>Simple Setup</item>
+		<item>Connect the included Headset Audio Controller to the Xbox One Controller for game and chat audio.</item>
+		<item>Mobile Gaming Versatility</item>
+		<item>Disconnect from the Audio Controller to use the Sentinel Task Force with your mobile devices.</item>
+		<item>For All Your Audio Needs</item>
+		<item>Headsets aren’t just great for games. Enjoy your favorite movies and TV shows with high quality sound. Then crank up your tunes from music services like Xbox Music™ or Skype™ with friends!</item>
+    </string-array>
+    <string-array name="taskForcePsBullets">
+        <item>High-Quality Game and Chat Audio for PS4™</item>
+		<item>Mobile Device and PS Vita™ Compatible</item>
+		<item>Variable Bass Boost, Master Volume and Mic Controls</item> 
+		<item>Massive, Full-Range 50mm Neodymium Speakers</item>
+    </string-array>
+    <string-array name="taskForcePsDetails">
+        <item>Dominate future battles with the Call of Duty® Advanced Warfare Ear Force Sentinel Task Force Gaming Headset for PS4. High-quality digital game and chat audio driven by 50mm speakers set in a lightweight headset will have you engaged for hours of gameplay.</item>
+		<item>Amplified Stereo Sound</item>
+		<item>The Sentinel Strike Force for PS4 delivers high-quality digital game and chat for an enhanced audio experience.</item>
+		<item>Amazing Sound and Comfort</item>
+		<item>Full-range 50mm speakers supported by synthetic leather mesh ear cushions for hours of comfort and noise-isolation.</item>
+		<item>Swappable Speaker Plates</item>
+		<item>Add a new set of plates to personalize the look of your headset from TurtleBeach.com/plates.</item>
+		<item>High-Quality Chat</item>
+		<item>High-sensitivity microphone on a flexible, removable boom keeps you heard loud and clear.</item>
+		<item>Simple Setup</item>
+		<item>One simple USB connection delivers all game and chat audio.</item>
+		<item>Mobile Gaming Versatility</item>
+		<item>Disconnect from the in-line amp to use the headset on the go with your mobile devices including the PS Vita™.</item>
+		<item>Microphone Monitor</item>
+		<item>Hear your voice in the headset so you don’t have to shout.</item>
+		<item>Adjustable Bass Boost</item>
+		<item>Dial up low-end thumps with variable Bass Boost.</item>
+		<item>Convenient In-Line Controls</item>
+		<item>Master volume, Bass Boost and mic mute controls at your fingertips.</item>
+		<item>For All Your Audio Needs</item>
+		<item>Headsets aren’t just great for games. Use the headset for enjoying streaming movies and TV from Netflix™ and Hulu Plus™ or Blu-Ray Disc. Crank up your tunes on music services like Pandora™ and then chat with friends or make mobile calls!</item>
+    </string-array>
+    <string-array name="blizzardBullets">
+        <item>Powerful 50mm Speakers with Noise-Isolating Ear Cushions</item>
+		<item>High-Sensitivity Mic on Removable Boom</item>
+		<item>Rotate-to-Flat Ear Cups</item>
+		<item>Works with Any PC, Mac or Mobile Device</item>
+    </string-array>
+    <string-array name="blizzardDetails">
+        <item>The Turtle Beach® Heroes of the Storm™ Stereo PC Gaming Headset is your key to powerful upgrades and ultimate victory in the raucous online team brawler starring your favorite Blizzard characters. Hear every game detail though epic 50mm speakers, battle for hours in comfort, communicate clearly with teammates and personalize your headset with speaker plates of your favorite Blizzard heroes.</item>
+        <item>Epic Turtle Beach Sound</item>
+        <item>Powerful 50mm speakers deliver all the crisp highs and powerful lows.</item>
+        <item>Loud and Clear Chat</item>
+        <item>Fully adjustable, high-sensitivity microphone on a removable boom.</item>
+        <item>Convenient In-Line Controls</item>
+        <item>Easy to access volume control and mic mute at your fingertips.</item>
+        <item>Swappable Speaker Plates</item>
+        <item>Personalize your headset and collect the full assortment of Heroes of the Storm plates at TurtleBeach.com/plates.</item>
+        <item>Quiet and Comfortable</item>
+        <item>Breathable, around-the-ear cushions are optimized for noise isolation and long play sessions.</item>
+        <item>Easy Plug and Play Setup</item>
+        <item>Simple 3.5mm setup with no software to install or manage.</item>
+        <item>For All Your Audio Needs</item>
+        <item>Go beyond games! The Heroes of the Storm PC Gaming Headset will be your go-to headset for Skype™, mobile gaming, streaming videos, music and more.</item>
+    </string-array>
+    <string-array name="marvelBullets">
+        <item>Smashing 50mm Speakers</item>
+        <item>Customize with Three Included Character Decals!</item>
+        <item>Powerful Amplifier Adds Bass Boost for Xbox 360 and PC.</item>
+        <item>Use with PS4™, Wii U™, PS Vita or other Mobile Devices!</item>
+    </string-array>
+    <string-array name="marvelDetails">
+        <item>Super power your sound with the Disney Infinity: Marvel Super Heroes Multiplatform Stereo Gaming Headset! Get massive sound from 50mm speakers to match the huge levels and incredible gameplay along with clear chat and unmatched comfort for a heroic gaming experience.</item>
+        <item>Transform Your Headset</item>
+        <item>Personalize your headset from three included character decals!</item>
+        <item>Full-Range Audio</item>
+        <item>Powerful 50mm Neodymium speakers deliver sizzling highs and thunderous lows.</item>
+        <item>BOOST Your Bass*!</item>
+        <item>Add more rumble to the game audio.</item>
+        <item>Set the Mix*!</item>
+        <item>Set the balance of game and chat audio how you’d like.</item>
+        <item>Be Heard Loud and Clear</item>
+        <item>Fully adjustable, high-sensitivity microphone on a removable boom.</item>
+        <item>Quiet and Comfortable</item>
+        <item>Adjustable, around-the-ear design optimized for noise isolation and long play sessions.</item>
+        <item>Stop SHOUTING*!</item>
+        <item>Hear your own voice in the headset to avoid shouting into the mic.</item>
+        <item>For All Your Audio Needs</item>
+        <item>Go beyond games and use the headset for Skype™, enjoying videos, music and more.</item>
+        <item></item>
+        <item>*Amplifier features available for Xbox 360 and PC/Mac.</item>
+    </string-array>
+    <string-array name="starwarsBullets">
+        <item>Full-Range 50mm Speakers</item>
+				<item>Swappable Speaker Plates (Darth Vader Plates Included)</item>
+				<item>PC Cable with In-line Controls for Volume and Mic Mute</item>
+				<item>Perfect for Gaming on Tablets and Mobile Devices</item>
+    </string-array>
+    <string-array name="starwarsDetails">
+        <item>Launch your games, movies and music into hyperspace with the Ear Force® Star Wars™ PC and Mobile Gaming Stereo Headset. Fully armed and operational with epic speakers and a comfortable design, the headset can be personalized with the included set of Darth Vader speaker plates! Compatible with PC, Mac® and all your favorite mobile gaming devices!</item>
+        <item>Galactic Turtle Beach Sound</item>
+        <item>Full-range 50mm Neodymium speakers deliver crisp highs and powerful lows.</item>
+        <item>Join the Dark Side</item>
+        <item>Includes set of Darth Vader swappable speaker plates!</item>
+        <item>Swappable Speaker Plates</item>
+        <item>Personalize the look of your headset with a new set of Star Wars™ plates from TurtleBeach.com/plates*.</item>
+        <item>Convenient PC In-Line Controls</item>
+        <item>PC Cable includes mic mute and master volume controls at your fingertips.</item>
+        <item>Quiet and Comfortable</item>
+        <item>Breathable, around-the-ear cushions are optimized for noise isolation and long play sessions.</item>
+        <item>Loud and Clear Chat</item>
+        <item>Fully adjustable, high-sensitivity microphone on a removable boom.</item>
+        <item>Easy Plug and Play Setup</item>
+        <item>Simple 3.5mm setup with no software to install or manage.</item>
+        <item>For All Your Audio Needs</item>
+        <item>Go beyond games! The Star Wars PC Gaming Headset will be your go-to headset for Skype™, streaming videos on Netflix™, music, mobile gaming and more.</item>
+        <item></item>
+        <item>*The availability of additional speaker plates varies by market and is subject to local restrictions.</item>
+    </string-array>
+    <string-array name="titanfallAtlasBullets">
+        <item>Ready for any version of Titanfall</item>
+        <item>Includes Headset Adapter for Xbox One</item>
+        <item>In-line Amplifier for Xbox 360 \u0026 PC players</item>
+        <item>Full-range 50mm Speakers for Thunderous Audio</item>
+    </string-array>
+    <string-array name="titanfallAtlasDetails">
+        <item>Engage in fast-paced, vertical warfare with the Titanfall™ Ear Force® Atlas Official Gaming Headset. Feel every bone-jarring footfall of your massive Titan, pinpoint enemy locations and stay in clear communication with other pilots as you battle for control of the Frontier.</item>
+        <item>Designed for Xbox One™</item>
+        <item>Headphones are tuned to provide the highest quality audio from the Xbox One™ Audio Adapter.</item>
+        <item>Customize Your Audio</item>
+        <item>Personalize game \u0026 chat mix volume, plus mic mute right at your fingertips.</item>
+        <item>Be Heard Loud and Clear</item>
+        <item>High-quality removable mic for chat on Xbox One™, Skype™ and Xbox LIVE®.</item>
+        <item>Comfortable, Twist-Cup Design</item>
+        <item>Breathable mesh cushions on ear cups rotate-to-flat for wearing around your neck.</item>
+        <item>Bass Boost</item>
+        <item>Built-in Bass Boost adds more depth and punch to the game audio (Xbox 360 \u0026 PC only).</item>
+        <item>Mic Monitor</item>
+        <item>Hear own voice in the headset to avoid shouting (Xbox 360 \u0026 PC only).</item>
+        <item>For Your Entertainment</item>
+        <item>Ear Force Atlas isn’t just great for Titanfall. Enjoy your favorite movies and TV shows with superior quality sound. Then crank up your tunes from music services like Xbox Music™ or Skype™ with friends!</item>
+        <item>Mobile Gaming</item>
+        <item>Perfect for gaming on your mobile phone, tablet or portable game devices.</item>
+        <item>Massive 50mm Speakers</item>
+        <item>Delivers superior audio quality with crisp highs and deep, rumbling lows.</item>
+    </string-array>
+    <string-array name="px4Bullets">
+        <item>Wireless Game \u0026 Chat Audio</item>
+        <item>Dolby® Digital Surround Sound</item>
+        <item>15hr Rechargeable Battery</item>
+        <item>Bluetooth for Wireless Chat \u0026 Phone Calls</item>
+    </string-array>
+    <string-array name="pxDetails">
+        <item></item>
+        <item>100% Wireless Game \u0026 Bluetooth Chat</item>
+        <item>Enjoy completely wireless freedom for games plus Blu-Ray Disc™ and streaming video and music and PSN chat.</item>
+        <item>Dolby® Digital Surround Sound</item>
+        <item>Pinpoint the direction of every sound in all your games and movies in Dolby® Digital Surround Sound.</item>
+        <item>Dual-Band Wi-Fi Wireless Technology</item>
+        <item>Interference-free, dual-band wireless means clearer chat and game audio.</item>
+        <item>Dual-Pairing Bluetooth Brings Calls \u0026 Gaming Together</item>
+        <item>Take advantage of Bluetooth to answer mobile phone calls without ever leaving the game. Or pair the PX4 with any Bluetooth communication device, such as a PC, laptop or tablet.</item>
+        <item>Long-Lasting Comfort</item>
+        <item>Thickly padded, adjustable headband with breathable mesh ear cushions for marathon game sessions.</item>
+        <item>Customizable Audio Advantage</item>
+        <item>With multiple EQ presets including bass and treble boost combinations plus separate game and chat volume controls.</item>
+        <item>Music + Movies + Games</item>
+        <item>Headsets aren’t just great for games. Use your headset for listening to movies or TV in cinematic surround sound from video services like Netflix™ and Hulu Plus™ or Blu-Ray Disc™. Then crank up your tunes on music services like Music Unlimited™!</item>
+        <item>Play \u0026 Charge Rechargeable Battery</item>
+        <item>Built-in rechargeable battery delivers up to 15 hours of continuous play. You can even charge while playing.</item>
+        <item>Listen to Your Music</item>
+        <item>Connect a second audio source (such as a phone or MP3 player) to the transmitter to listen to music when done gaming.</item>
+        <item>Dynamic Chat Boost™</item>
+        <item>Chat volume automatically increases as the game volume gets louder.</item>
+        <item>Adjustable Surround Sound Angles</item>
+        <item>Customize your audio experience by altering the positioning of the surround sound.</item>
+        <item>Separate Volume Controls</item>
+        <item>Personalize the balance of game and chat audio for the perfect mix.</item>
+        <item>Variable Microphone Monitor</item>
+        <item>Adjust the level of your voice heard in the headset, so you won’t have to shout.</item>
+        <item>Wired Mobile Connectivity</item>
+        <item>PX4 can be plug into any 3.5mm jack with the included Mobile Device Cable.</item>
+        <item></item>
+        <item>*Not all features available with mobile game devices including game and chat volume mix control.</item>
+    </string-array>
+    
+    
+    <string-array name="special_edition_group_labels">
+        <item>CALL OF DUTY®</item>
+        <item>STAR WARS™</item>
+        <item>BLIZZARD™</item>
+        <item>MARVEL</item>
+        <item>TITANFALL™</item>
+    </string-array>
+    <!--
+    TODO slider logo array?
+    <item>img_slide_headsetlogo_special_nla.png</item>
+        <item>img_slide_headsetlogo_ps3_p11.png</item>
+        <item>img_slide_headsetlogo_ps3_pla.png</item>
+        <item>img_slide_headsetlogo_ps3_px22.png</item>
+        <item>img_slide_headsetlogo_ps4_p12.png</item>
+        <item>img_slide_headsetlogo_ps4_p4c.png</item>
+        <item>img_slide_headsetlogo_ps4_stealth400.png</item>
+        <item>img_slide_headsetlogo_ps4_stealth500p.png</item>
+        
+        <item>img_slide_headsetlogo_xb360_x12.png</item>
+        <item>img_slide_headsetlogo_xb360_x32.png</item>
+        <item>img_slide_headsetlogo_xb360_xl1.png</item>
+        <item>img_slide_headsetlogo_xbone_xofour.png</item>
+        <item>img_slide_headsetlogo_xbone_xoone.png</item>
+        <item>img_slide_headsetlogo_xbone_xoseven.png</item>
+    -->
+
+</resources>
