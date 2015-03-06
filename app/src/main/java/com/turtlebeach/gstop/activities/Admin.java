@@ -1,13 +1,17 @@
 package com.turtlebeach.gstop.activities;
 
-import java.io.IOException;
-
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -20,10 +24,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
-import com.turtlebeach.gstop.headsets.Constants;
+
 import com.turtlebeach.gstop.R;
+import com.turtlebeach.gstop.headsets.Constants;
 import com.turtlebeach.gstop.headsets.ui.BaseActivity;
 import com.turtlebeach.gstop.receiver.WriteLogs;
+
+import java.io.IOException;
 
 /**
  * This activity will show after the user opens the password dialog 
@@ -61,6 +68,12 @@ public class Admin extends BaseActivity {
         			sPrefs.getString(Constants.STORE_ZIP, ""));
         	((EditText)findViewById(R.id.adminNumber)).setText(
         			sPrefs.getString(Constants.STORE_NUMBER, ""));
+            findViewById(R.id.adminCancel).setEnabled(true);
+            findViewById(R.id.adminLog).setEnabled(true);
+        } else {
+            //preferences are not yet saved, disable cancel and log features
+            findViewById(R.id.adminCancel).setEnabled(false);
+            findViewById(R.id.adminLog).setEnabled(false);
         }
         ((EditText)findViewById(R.id.adminZip)).setOnEditorActionListener(done);
         ((EditText)findViewById(R.id.adminNumber)).setOnEditorActionListener(done);
@@ -139,8 +152,38 @@ public class Admin extends BaseActivity {
             }
     		break;
         case R.id.adminLog:
-            startService(new Intent(this, WriteLogs.class));
-            Log.i(TAG, "starting log service");
+            if(!Constants.isRemoteSDAvailable()){
+                //show the error dialog, no sd card, user must press get logs button again
+                final AlertDialog dog = showAlert(this, getString(R.string.admin_dogSD), getString(R.string.admin_dogSDtext));
+                dog.setButton(DialogInterface.BUTTON_NEUTRAL, getString(android.R.string.ok), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // User completed the dialog
+                        dialog.dismiss();
+                    }
+                });
+                dog.show();
+            } else {
+                //sd card is available, confirm log download
+                final AlertDialog dog = showAlert(this, getString(R.string.admin_dogDL), getString(R.string.admin_dogDLtext));
+                dog.setButton(DialogInterface.BUTTON_NEGATIVE, getString(android.R.string.no), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // User cancelled the dialog
+                        dialog.dismiss();
+                    }
+                });
+                dog.setButton(DialogInterface.BUTTON_POSITIVE, getString(android.R.string.yes), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // User cancelled the dialog
+                        dialog.dismiss();
+                        LocalBroadcastManager.getInstance(Admin.this).registerReceiver(logListener,
+                                new IntentFilter(WriteLogs.TAG));
+                        startService(new Intent(Admin.this, WriteLogs.class));
+                        Log.i(TAG, "starting log service");
+                    }
+                });
+                dog.show();
+            }
+
             break;
     	}
     	
@@ -149,12 +192,13 @@ public class Admin extends BaseActivity {
 	void backToApp(String logMessage) {
 		startActivity(new Intent(Admin.this, SplashScreenActivity.class));
         Log.i(TAG, logMessage);
+        LocalBroadcastManager.getInstance(Admin.this).unregisterReceiver(logListener);
         finish();
 	}
     
     void exitKiosk() {
     	//Exit app selected, every activity that is started must "finish" if this is going to work
-
+        LocalBroadcastManager.getInstance(Admin.this).unregisterReceiver(logListener);
 		try {	
 			// REQUIRES ROOT
 			// Restarts the system nav bar
@@ -172,6 +216,37 @@ public class Admin extends BaseActivity {
 		}
 		finish();
     }
+
+    public static AlertDialog showAlert(Activity ctx, String title, String message) {
+        // Use an AlertDialog.Builder to put up an interactive message, set the buttons after
+        return new AlertDialog.Builder(ctx)
+                .setCancelable(false)
+                .setMessage(message)
+                .setTitle(title).create();
+    }
+
+    BroadcastReceiver logListener = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if(Admin.this != null && !Admin.this.isFinishing()) {
+                Admin.this.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        final AlertDialog dog = showAlert(Admin.this,
+                                getString(R.string.admin_dogDone), getString(R.string.admin_dogDonetext));
+                        dog.setButton(DialogInterface.BUTTON_NEUTRAL, getString(android.R.string.ok), new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // User cancelled the dialog
+                                dialog.dismiss();
+                                LocalBroadcastManager.getInstance(Admin.this).unregisterReceiver(logListener);
+                            }
+                        });
+                        dog.show();
+                    }
+                });
+            }
+        }
+    };
   
 }
     

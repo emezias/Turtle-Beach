@@ -25,6 +25,14 @@
     <string name="adminExit">EXIT APP</string>
     <string name="cancel">CANCEL</string>
 
+    <!-- Log dialogs -->
+    <string name="admin_dogSD">SD card required</string>
+    <string name="admin_dogSDtext">To download logs, an SD card must be inserted into the tablet.</string>
+    <string name="admin_dogDL">Download logs?</string>
+    <string name="admin_dogDLtext">Logs will be downloaded to the SD Card.</string>
+    <string name="admin_dogDone">Download complete</string>
+    <string name="admin_dogDonetext">Logs have been successfully downloaded to the SD Card.</string>
+
     <!-- Splash Screen prompts -->
     <string name="splashTitle">PLEASE PUT ON A \nHEADSET TO BEGIN</string>
     <string name="splashButton">TOUCH THE TABLET TO CONTINUE</string>
