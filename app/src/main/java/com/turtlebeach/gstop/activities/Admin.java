@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.turtlebeach.gstop.headsets.Constants;
 import com.turtlebeach.gstop.R;
 import com.turtlebeach.gstop.headsets.ui.BaseActivity;
+import com.turtlebeach.gstop.headsets.update.UpdateService;
 import com.turtlebeach.gstop.receiver.WriteLogs;
 
 /**
@@ -33,7 +34,8 @@ public class Admin extends BaseActivity {
 	static final String TAG = "Admin";
 	public static final String PWD = "062819682014";
 	private static SharedPreferences sPrefs;
-	//07-11 16:13:53.400: D/MenuActivity(6623): pos click get text is 67434211771
+	private static boolean created = false;
+    //don't kill the navigation bar every time...
 
 	private OnEditorActionListener done = new OnEditorActionListener() {
 	    @Override
@@ -53,8 +55,22 @@ public class Admin extends BaseActivity {
         setContentView(R.layout.admin_screen);
         ((TextView)findViewById(R.id.adminManTV)).setText(Build.MANUFACTURER.toUpperCase());
         ((TextView)findViewById(R.id.adminVerTV)).setText(Build.VERSION.RELEASE);
-        
+        if(!created) {
+            hideNavBar();
+        }
+        //This is a bit of a race, using bool to get update dialog onscreen more quickly, registration and broadcast is too slow
+        if(UpdateService.mUpdating) {
+            createContentUpdateProgress();
+        }
+
         sPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if(sPrefs.contains(Constants.STORE_ZIP) && getIntent().getExtras() == null) {
+            //this is a reboot, or other app restart - set Extras when exiting the app
+            startActivity(new Intent(this, MainScreen.class));
+            finish();
+            return;
+        }
+        //check for existing preferences and fill in the fields
         if(sPrefs.contains(Constants.STORE_ZIP)) {
         	//Pre load the EditText fields with the saved values when possible
         	((EditText)findViewById(R.id.adminZip)).setText(
@@ -94,6 +110,29 @@ public class Admin extends BaseActivity {
 	public boolean onTouch(View v, MotionEvent event) {
     	//do not call super, do not time out to the demo
     	return false;
+    }
+
+    void hideNavBar() {
+        try {
+            // In lieu of a proper kiosk mode, get the existing environment, run superuser
+            // kill the nav bar
+            // hard coded value for Acer/Asus, works on both 4.1 and 4.2
+            //pid maybe 79 on 4.2.2, set to 42 for 4.1 here
+            Log.w(TAG, "hiding navigation bar");
+            // REQUIRES ROOT
+            final Process proc = Runtime
+                    .getRuntime()
+                    .exec(new String[] { "su", "-c",
+                            "service call activity 42 s16 com.android.systemui" });
+            proc.waitFor();
+            created = true;
+        } catch (IOException e) {
+            Log.e(TAG, "Exception running as root: " + e.getMessage());
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            Log.e(TAG, "Interrupted: " + e.getMessage());
+            e.printStackTrace();
+        } //end nav bar hide
     }
 
 	public void adminButton(View btn) {
@@ -170,6 +209,7 @@ public class Admin extends BaseActivity {
 			Log.e(TAG, "Interrupted: " + e.getMessage());
 			e.printStackTrace();
 		}
+        created = false;
 		finish();
     }
   

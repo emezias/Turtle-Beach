@@ -18,6 +18,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.turtlebeach.gstop.R;
+import com.turtlebeach.gstop.activities.DemoVideo;
 import com.turtlebeach.gstop.headsets.model.HeadsetManager;
 import com.turtlebeach.gstop.headsets.update.UpdateService;
 
@@ -30,9 +31,7 @@ public abstract class BaseActivity extends Activity implements OnTouchListener {
     
     //This variable gets set at launch by the Application class so the touch timeout will work
     //refer to TurtleBeachApplication.java
-    public static Class<Activity> mDemoListener = null;
-    
-    //TODO fix Update Service and move this declaration 
+
     //Receiver code and wait dialog can move to the splash screen instead of being part of every screen
     public static ProgressDialog mUpdateProgress;
     
@@ -47,7 +46,8 @@ public abstract class BaseActivity extends Activity implements OnTouchListener {
 	    //Remove notification bar
 	    w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		//hide the system bar and drawer on top
-		mIdleAfterTime = getResources().getInteger(R.integer.idleAfter);
+		mIdleAfterTime = getResources().getInteger(R.integer.idleAfter)*1000;
+        //mIdleAfterTime = getResources().getInteger(R.integer.idleAfter);
         mHandler = new Handler();
 	}
 
@@ -61,18 +61,14 @@ public abstract class BaseActivity extends Activity implements OnTouchListener {
 	    updateFilter.addAction(UpdateService.ACTION_FILE_LOADING_STARTED);
 	    registerReceiver(mUpdateSvcReceiver, updateFilter);
          		
-        if(!UpdateService.mUpdating) {
-        	//don't set idle time to  play video demo during an update
-        	((ViewGroup) findViewById(android.R.id.content)).setOnTouchListener(this);
-        	if(mDemoListener != null && !BaseActivity.this.getClass().getSimpleName().equals("VideoPlaybackActivity")) {
-        		//The app class will set this variable
-        		mHandler.postDelayed(mFinishRunnable, mIdleAfterTime);
-        		Log.v(TAG, "onResume startIdleTimer " + BaseActivity.this.getClass().getSimpleName());
-        	}
-        	//set idle time timeout to go to the demo video and touch listener to stop it from going
-        } else {
-        	Log.v(TAG, "onResume starting update progress dialog.");
+        if(UpdateService.mUpdating) {
+            Log.v(TAG, "onResume starting update progress dialog.");
             createContentUpdateProgress();
+        } else if(!BaseActivity.this.getClass().getSimpleName().equals("VideoPlaybackActivity")) {
+            //don't set idle time to play video demo during a video playback
+            ((ViewGroup) findViewById(android.R.id.content)).setOnTouchListener(this);
+            mHandler.postDelayed(mFinishRunnable, mIdleAfterTime);
+            Log.v(TAG, "onResume startIdleTimer " + BaseActivity.this.getClass().getSimpleName());
         }
     }
 
@@ -93,34 +89,28 @@ public abstract class BaseActivity extends Activity implements OnTouchListener {
     
     @Override
 	public boolean onTouch(View v, MotionEvent event) {
-    	return handleTouchEvent(event);
-	}
-    
-    private boolean handleTouchEvent(MotionEvent event) {
-		// This is the idle time timer tracking the 45s to start the demo video  
-    	// it used to be a frame layout class, an interface, listener and extra view which seems unnecessary
-    	
-    	//ignore calls from the VideoPlayback Activity, that activity sets the mFinishRunnable on its own, based on video state
-    	if(BaseActivity.this.getClass().getSimpleName().equals("VideoPlaybackActivity")) {
-    		//Log.i(TAG, "ignore touch in BaseActivity, video playback");
-    		return false;
-    	}
-		if(event.getAction() == MotionEvent.ACTION_UP ||
-				event.getAction() == MotionEvent.ACTION_CANCEL) {
-			//reset the timer, touch is over, set new timer
+        //ignore calls from the VideoPlayback Activity, that activity sets the mFinishRunnable on its own, based on video state
+        if(BaseActivity.this.getClass().getSimpleName().equals("VideoPlaybackActivity")) {
+            //Log.i(TAG, "ignore touch in BaseActivity, video playback");
+            return false;
+        }
+        if(event.getAction() == MotionEvent.ACTION_UP ||
+                event.getAction() == MotionEvent.ACTION_CANCEL) {
+            //reset the timer, touch is over, set new timer
             mHandler.postDelayed(mFinishRunnable, mIdleAfterTime);
             Log.v(TAG, "startIdleTimer " + BaseActivity.this.getClass().getSimpleName());
-		} else if(event.getAction() == MotionEvent.ACTION_DOWN) {
-			//reset the timer, remove old since a touch started
-			mHandler.removeCallbacks(mFinishRunnable);
-		}
-		//this never actually processes the touch event, it is background, always return false
-		return false;
-    }
-
+        } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
+            //reset the timer, remove old since a touch started
+            mHandler.removeCallbacks(mFinishRunnable);
+        }
+        //this never actually processes the touch event, it is background, always return false
+        return false;
+	}
+    
 
     /**
      * sets up the progress dialog shown during updates
+     * This can probably move to the Admin activity
      */
     protected void createContentUpdateProgress() {
 //    	if(!this.hasWindowFocus()) return;
@@ -153,7 +143,7 @@ public abstract class BaseActivity extends Activity implements OnTouchListener {
 				//mDemoListener must be set! Put it in the application class and never change it
 				//no back stack, no need for flags intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 				Log.v(TAG, "starting demo");
-				startActivity(new Intent(BaseActivity.this, mDemoListener));
+				startActivity(new Intent(BaseActivity.this, DemoVideo.class));
 				//end the running activity when it's time to launch the demo
 				finish();
 			} 
@@ -188,8 +178,8 @@ public abstract class BaseActivity extends Activity implements OnTouchListener {
                 mUpdateProgress = null;
                 HeadsetManager.init(aContext);
 
-                if(mHandler != null  && mDemoListener != null
-                		&& Looper.myLooper() == Looper.getMainLooper()) {
+                if(mHandler != null  && BaseActivity.this != null
+                        && Looper.myLooper() == Looper.getMainLooper()) {
                     mHandler.postDelayed(mFinishRunnable, mIdleAfterTime);
                     Log.v(TAG, "startIdleTimer from update receiver " + BaseActivity.this.getClass().getSimpleName());
                     //set touch listener so activity will timeout to demo video

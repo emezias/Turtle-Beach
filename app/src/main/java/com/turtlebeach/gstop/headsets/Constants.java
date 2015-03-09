@@ -31,6 +31,8 @@ public class Constants {
 	public static String getRootDir() {
 		// The data directory will not work for Lynx, leaving data on emulated drive
 		if (Build.MANUFACTURER.toLowerCase().contains("a")) {
+            Log.d(TAG, "getting dir: " + Environment.getExternalStorageDirectory() + File.separator
+                    + Constants.CONTENT_DIR);
 			return Environment.getExternalStorageDirectory() + File.separator
 					+ Constants.CONTENT_DIR;
 		} else {

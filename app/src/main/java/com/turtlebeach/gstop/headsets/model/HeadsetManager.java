@@ -300,7 +300,8 @@ public class HeadsetManager {
     			n = BitmapFactory.decodeFile(tmp.getAbsolutePath());
     		} else {
     			sFeatured[position] = null;
-    			break;
+                Log.e(LOG_TAG, "null featured headset? " + position);
+                break;
     		}
     		//now the pressed state
     		tmp = new File(Constants.getButtonDir(), pressFile[position]);
@@ -308,6 +309,7 @@ public class HeadsetManager {
     			p = BitmapFactory.decodeFile(tmp.getAbsolutePath());
     		} else {
     			sFeatured[position] = null;
+                Log.e(LOG_TAG, "null featured headset? " + position);
     			break;
     		}
     		states = new StateListDrawable();
@@ -315,6 +317,7 @@ public class HeadsetManager {
     		states.addState(new int[]{android.R.attr.state_pressed}, new BitmapDrawable(res, p));
     		states.addState(new int[]{}, new BitmapDrawable(res, n));
     		sFeatured[position] = states;
+            Log.i(LOG_TAG, "set featured headset? " + position);
     	}
 	    	
 	}

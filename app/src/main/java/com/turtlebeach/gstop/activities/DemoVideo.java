@@ -39,19 +39,6 @@ public class DemoVideo extends BaseActivity {
      * canRunNow() and return to the main menu after closing.
      */
     private VideoView mVideoView;
-    
-    /*
-	BroadcastReceiver mDemoReceiver = new BroadcastReceiver() {
-		//This receiver builds on the default behavior of the Base Activity to insure the video stops
-	    @Override
-	    public void onReceive(Context aContext, Intent aIntent) {
-	    	if(mVideoView != null && mVideoView.isPlaying()) {
-	    		mVideoView.pause();
-	    	}
-	    } 
-	
-	};
-	*/
 
 	public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -62,7 +49,7 @@ public class DemoVideo extends BaseActivity {
         if(!demoDir.exists()){
             Toast.makeText(this, "Failed to start demo video: TurtleBeachDemo not under _demo directory",
                     Toast.LENGTH_LONG).show();
-            leaveDemo();
+            finish();
             return;
         }
         mVideoView = (VideoView) findViewById(R.id.demo_vidview);
@@ -107,7 +94,7 @@ public class DemoVideo extends BaseActivity {
 
                 if(aMotionEvent.getAction() == MotionEvent.ACTION_UP){
                     mVideoView.stopPlayback();
-                    leaveDemo();
+                    finish();
                 }
                 return true;
 
@@ -117,12 +104,6 @@ public class DemoVideo extends BaseActivity {
         mVideoView.setVideoPath(Constants.getDemoDir() + File.separator + DEMOFILE);
         mVideoView.start();
         mHandler.removeCallbacks(mFinishRunnable);
-    }
-    
-    void leaveDemo() {
-    	//flag is not required because every activity will "finish" intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    	startActivity(new Intent(DemoVideo.this, FeaturedHeadsets.class));
-    	finish();
     }
 
    

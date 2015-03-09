@@ -17,6 +17,7 @@ import android.util.Log;
 import com.turtlebeach.gstop.activities.DemoVideo;
 import com.turtlebeach.gstop.activities.SplashScreenActivity;
 import com.turtlebeach.gstop.headsets.Constants;
+import com.turtlebeach.gstop.headsets.model.Headset;
 import com.turtlebeach.gstop.headsets.model.HeadsetManager;
 import com.turtlebeach.gstop.headsets.ui.BaseActivity;
 import com.turtlebeach.gstop.headsets.update.UpdateService;
@@ -33,7 +34,7 @@ public class TurtleBeachApplication extends Application {
 	
 	//Array used to initialize the headset manager with the correct catalog headsets, both special edition and catalog
 	//featured headsets sold separately :)
-	private static final int[] sBBYHeadsets = { 
+	private static final int[] sBBYHeadsets = {
 		HeadsetManager.HEADSET_ID_NLA, HeadsetManager.HEADSET_ID_P11, HeadsetManager.HEADSET_ID_P12, HeadsetManager.HEADSET_ID_PX4,
 		HeadsetManager.HEADSET_ID_PLA, HeadsetManager.HEADSET_ID_PX22, HeadsetManager.HEADSET_ID_STEALTH400, HeadsetManager.HEADSET_ID_STEALTH500P,
 		HeadsetManager.HEADSET_ID_X12, HeadsetManager.HEADSET_ID_X32, HeadsetManager.HEADSET_ID_XL1, HeadsetManager.HEADSET_ID_STEALTH500X,
@@ -71,13 +72,11 @@ public class TurtleBeachApplication extends Application {
 
 		//Without the array of headsets all headsets are instantiated, this saves space in the heap
 		HeadsetManager.init(this, sBBYHeadsets);
-		BaseActivity.mDemoListener = (Class) DemoVideo.class;
-		// This sets up the demo to play video after 45s
-		
+
 		// Only launch an update if it makes sense.  Also, set the flag early so we catch 
 		// the update in the Splash activity.  Ideally, update would be triggered from splash...
 		File file = new File(Constants.getRootDir());
-		if (Constants.isRemoteSDAvailable() && !file.exists()) {
+		if(Constants.isRemoteSDAvailable() && !file.exists()) {
 			final Intent intent = new Intent(this, UpdateService.class);
 	        intent.setAction(UpdateService.ACTION_UPDATE_CONTENT_FROM_SDCARD);
 			startService(intent);
